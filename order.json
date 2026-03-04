@@ -1,1002 +1,1970 @@
-[
-  {
-    "work_order_id": "WO-1001",
-    "mo_id": "MO-001",
-    "routing_step": 10,
-    "description": "Material Preparation",
-    "assigned_resource": "Station-A",
-    "status": "Completed",
-    "start_date": "2026-03-01T08:00:00Z",
-    "end_date": "2026-03-01T12:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1002",
-    "mo_id": "MO-001",
-    "routing_step": 20,
-    "description": "CNC Machining",
-    "assigned_resource": "CNC-04",
-    "status": "In Progress",
-    "start_date": "2026-03-02T09:00:00Z",
-    "end_date": "2026-03-03T17:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1003",
-    "mo_id": "MO-001",
-    "routing_step": 30,
-    "description": "Quality Inspection",
-    "assigned_resource": "Lab-1",
-    "status": "Planned",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T10:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1004",
-    "mo_id": "MO-002",
-    "routing_step": 10,
-    "description": "Material Preparation",
-    "assigned_resource": "Station-B",
-    "status": "Completed",
-    "start_date": "2026-03-01T08:00:00Z",
-    "end_date": "2026-03-01T11:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1005",
-    "mo_id": "MO-002",
-    "routing_step": 20,
-    "description": "CNC Machining",
-    "assigned_resource": "CNC-02",
-    "status": "Completed",
-    "start_date": "2026-03-01T13:00:00Z",
-    "end_date": "2026-03-02T15:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1006",
-    "mo_id": "MO-002",
-    "routing_step": 30,
-    "description": "Surface Treatment",
-    "assigned_resource": "Anodize-01",
-    "status": "In Progress",
-    "start_date": "2026-03-04T07:00:00Z",
-    "end_date": "2026-03-04T12:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1007",
-    "mo_id": "MO-003",
-    "routing_step": 10,
-    "description": "Laser Cutting",
-    "assigned_resource": "Laser-X1",
-    "status": "Completed",
-    "start_date": "2026-03-02T08:00:00Z",
-    "end_date": "2026-03-02T10:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1008",
-    "mo_id": "MO-003",
-    "routing_step": 20,
-    "description": "Bending",
-    "assigned_resource": "Press-Brake-02",
-    "status": "Planned",
-    "start_date": "2026-03-05T08:00:00Z",
-    "end_date": "2026-03-05T16:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1009",
-    "mo_id": "MO-004",
-    "routing_step": 10,
-    "description": "Assembly Phase 1",
-    "assigned_resource": "Bench-05",
-    "status": "On Hold",
-    "start_date": "2026-03-03T08:00:00Z",
-    "end_date": "2026-03-03T17:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1010",
-    "mo_id": "MO-004",
-    "routing_step": 20,
-    "description": "Final Testing",
-    "assigned_resource": "Test-Rig-A",
-    "status": "Planned",
-    "start_date": "2026-03-06T09:00:00Z",
-    "end_date": "2026-03-06T11:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1011",
-    "mo_id": "MO-005",
-    "routing_step": 10,
-    "description": "Material Prep",
-    "assigned_resource": "Station-A",
-    "status": "Completed",
-    "start_date": "2026-03-01T08:00:00Z",
-    "end_date": "2026-03-01T12:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1012",
-    "mo_id": "MO-005",
-    "routing_step": 20,
-    "description": "Welding",
-    "assigned_resource": "Weld-Robot-1",
-    "status": "In Progress",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T16:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1013",
-    "mo_id": "MO-006",
-    "routing_step": 10,
-    "description": "Stamping",
-    "assigned_resource": "Press-01",
-    "status": "Completed",
-    "start_date": "2026-02-28T08:00:00Z",
-    "end_date": "2026-02-28T17:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1014",
-    "mo_id": "MO-006",
-    "routing_step": 20,
-    "description": "Deburring",
-    "assigned_resource": "Manual-Finish",
-    "status": "In Progress",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T10:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1015",
-    "mo_id": "MO-007",
-    "routing_step": 10,
-    "description": "Sawing",
-    "assigned_resource": "Saw-01",
-    "status": "Completed",
-    "start_date": "2026-03-01T08:00:00Z",
-    "end_date": "2026-03-01T09:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1016",
-    "mo_id": "MO-007",
-    "routing_step": 20,
-    "description": "Milling",
-    "assigned_resource": "CNC-01",
-    "status": "Planned",
-    "start_date": "2026-03-05T08:00:00Z",
-    "end_date": "2026-03-05T12:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1017",
-    "mo_id": "MO-008",
-    "routing_step": 10,
-    "description": "Casting",
-    "assigned_resource": "Foundry-1",
-    "status": "Completed",
-    "start_date": "2026-02-25T06:00:00Z",
-    "end_date": "2026-02-26T18:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1018",
-    "mo_id": "MO-008",
-    "routing_step": 20,
-    "description": "Rough Grinding",
-    "assigned_resource": "Grinder-03",
-    "status": "Completed",
-    "start_date": "2026-02-27T08:00:00Z",
-    "end_date": "2026-02-27T16:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1019",
-    "mo_id": "MO-008",
-    "routing_step": 30,
-    "description": "Finish Grinding",
-    "assigned_resource": "Grinder-03",
-    "status": "In Progress",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T16:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1020",
-    "mo_id": "MO-009",
-    "routing_step": 10,
-    "description": "Electronics SMT",
-    "assigned_resource": "SMT-Line-1",
-    "status": "Completed",
-    "start_date": "2026-03-02T08:00:00Z",
-    "end_date": "2026-03-02T20:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1021",
-    "mo_id": "MO-009",
-    "routing_step": 20,
-    "description": "Optical Inspection",
-    "assigned_resource": "AOI-01",
-    "status": "Completed",
-    "start_date": "2026-03-03T08:00:00Z",
-    "end_date": "2026-03-03T10:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1022",
-    "mo_id": "MO-009",
-    "routing_step": 30,
-    "description": "Box Build",
-    "assigned_resource": "Bench-12",
-    "status": "Planned",
-    "start_date": "2026-03-05T08:00:00Z",
-    "end_date": "2026-03-05T17:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1023",
-    "mo_id": "MO-010",
-    "routing_step": 10,
-    "description": "Painting",
-    "assigned_resource": "Paint-Booth-2",
-    "status": "In Progress",
-    "start_date": "2026-03-04T06:00:00Z",
-    "end_date": "2026-03-04T18:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1024",
-    "mo_id": "MO-011",
-    "routing_step": 10,
-    "description": "Kitting",
-    "assigned_resource": "Warehouse-K",
-    "status": "Completed",
-    "start_date": "2026-03-03T08:00:00Z",
-    "end_date": "2026-03-03T12:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1025",
-    "mo_id": "MO-011",
-    "routing_step": 20,
-    "description": "Sub-Assembly",
-    "assigned_resource": "Bench-01",
-    "status": "In Progress",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-05T17:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1026",
-    "mo_id": "MO-012",
-    "routing_step": 10,
-    "description": "Forging",
-    "assigned_resource": "Hammer-01",
-    "status": "Completed",
-    "start_date": "2026-02-20T08:00:00Z",
-    "end_date": "2026-02-21T17:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1027",
-    "mo_id": "MO-012",
-    "routing_step": 20,
-    "description": "Heat Treatment",
-    "assigned_resource": "Oven-03",
-    "status": "In Progress",
-    "start_date": "2026-03-03T08:00:00Z",
-    "end_date": "2026-03-05T08:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1028",
-    "mo_id": "MO-013",
-    "routing_step": 10,
-    "description": "Extrusion",
-    "assigned_resource": "Line-B",
-    "status": "Completed",
-    "start_date": "2026-03-01T00:00:00Z",
-    "end_date": "2026-03-01T08:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1029",
-    "mo_id": "MO-013",
-    "routing_step": 20,
-    "description": "Cutting to Length",
-    "assigned_resource": "Saw-02",
-    "status": "Completed",
-    "start_date": "2026-03-01T09:00:00Z",
-    "end_date": "2026-03-01T15:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1030",
-    "mo_id": "MO-013",
-    "routing_step": 30,
-    "description": "Packaging",
-    "assigned_resource": "Pack-01",
-    "status": "Completed",
-    "start_date": "2026-03-02T08:00:00Z",
-    "end_date": "2026-03-02T12:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1031",
-    "mo_id": "MO-014",
-    "routing_step": 10,
-    "description": "Injection Molding",
-    "assigned_resource": "Mold-05",
-    "status": "Completed",
-    "start_date": "2026-03-01T08:00:00Z",
-    "end_date": "2026-03-03T08:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1032",
-    "mo_id": "MO-014",
-    "routing_step": 20,
-    "description": "Trimming",
-    "assigned_resource": "Station-C",
-    "status": "In Progress",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T17:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1033",
-    "mo_id": "MO-015",
-    "routing_step": 10,
-    "description": "PCB Drilling",
-    "assigned_resource": "Drill-01",
-    "status": "Completed",
-    "start_date": "2026-03-02T08:00:00Z",
-    "end_date": "2026-03-02T14:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1034",
-    "mo_id": "MO-015",
-    "routing_step": 20,
-    "description": "Copper Plating",
-    "assigned_resource": "Tank-02",
-    "status": "In Progress",
-    "start_date": "2026-03-03T08:00:00Z",
-    "end_date": "2026-03-04T10:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1035",
-    "mo_id": "MO-016",
-    "routing_step": 10,
-    "description": "3D Printing",
-    "assigned_resource": "SLS-01",
-    "status": "In Progress",
-    "start_date": "2026-03-03T18:00:00Z",
-    "end_date": "2026-03-05T08:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1036",
-    "mo_id": "MO-017",
-    "routing_step": 10,
-    "description": "Fabric Cutting",
-    "assigned_resource": "Cutter-01",
-    "status": "Completed",
-    "start_date": "2026-03-03T08:00:00Z",
-    "end_date": "2026-03-03T12:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1037",
-    "mo_id": "MO-017",
-    "routing_step": 20,
-    "description": "Sewing",
-    "assigned_resource": "Stitch-04",
-    "status": "In Progress",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-05T17:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1038",
-    "mo_id": "MO-018",
-    "routing_step": 10,
-    "description": "Chemical Mixing",
-    "assigned_resource": "Vat-01",
-    "status": "Completed",
-    "start_date": "2026-03-03T08:00:00Z",
-    "end_date": "2026-03-03T11:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1039",
-    "mo_id": "MO-018",
-    "routing_step": 20,
-    "description": "Bottling",
-    "assigned_resource": "Fill-Line-A",
-    "status": "In Progress",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T15:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1040",
-    "mo_id": "MO-018",
-    "routing_step": 30,
-    "description": "Labeling",
-    "assigned_resource": "Labeler-01",
-    "status": "Planned",
-    "start_date": "2026-03-04T16:00:00Z",
-    "end_date": "2026-03-04T18:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1041",
-    "mo_id": "MO-019",
-    "routing_step": 10,
-    "description": "Sandblasting",
-    "assigned_resource": "Blast-01",
-    "status": "Completed",
-    "start_date": "2026-03-03T08:00:00Z",
-    "end_date": "2026-03-03T10:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1042",
-    "mo_id": "MO-019",
-    "routing_step": 20,
-    "description": "Powder Coating",
-    "assigned_resource": "Coating-Line",
-    "status": "In Progress",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T14:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1043",
-    "mo_id": "MO-020",
-    "routing_step": 10,
-    "description": "Wire Stripping",
-    "assigned_resource": "Auto-Strip",
-    "status": "Completed",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T09:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1044",
-    "mo_id": "MO-020",
-    "routing_step": 20,
-    "description": "Crimping",
-    "assigned_resource": "Crimp-01",
-    "status": "In Progress",
-    "start_date": "2026-03-04T10:00:00Z",
-    "end_date": "2026-03-04T17:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1045",
-    "mo_id": "MO-021",
-    "routing_step": 10,
-    "description": "Glass Cutting",
-    "assigned_resource": "Glass-Table",
-    "status": "Completed",
-    "start_date": "2026-03-02T08:00:00Z",
-    "end_date": "2026-03-02T12:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1046",
-    "mo_id": "MO-021",
-    "routing_step": 20,
-    "description": "Edge Polishing",
-    "assigned_resource": "Polisher-02",
-    "status": "Planned",
-    "start_date": "2026-03-05T08:00:00Z",
-    "end_date": "2026-03-05T15:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1047",
-    "mo_id": "MO-022",
-    "routing_step": 10,
-    "description": "Wood Planning",
-    "assigned_resource": "Planer-01",
-    "status": "Completed",
-    "start_date": "2026-03-03T08:00:00Z",
-    "end_date": "2026-03-03T10:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1048",
-    "mo_id": "MO-022",
-    "routing_step": 20,
-    "description": "Jointing",
-    "assigned_resource": "Jointer-01",
-    "status": "In Progress",
-    "start_date": "2026-03-04T13:00:00Z",
-    "end_date": "2026-03-04T17:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1049",
-    "mo_id": "MO-023",
-    "routing_step": 10,
-    "description": "Metal Shearing",
-    "assigned_resource": "Shear-01",
-    "status": "Completed",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T09:30:00Z"
-  },
-  {
-    "work_order_id": "WO-1050",
-    "mo_id": "MO-023",
-    "routing_step": 20,
-    "description": "Folding",
-    "assigned_resource": "Folder-02",
-    "status": "Planned",
-    "start_date": "2026-03-05T08:00:00Z",
-    "end_date": "2026-03-05T12:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1051",
-    "mo_id": "MO-024",
-    "routing_step": 10,
-    "description": "Drying",
-    "assigned_resource": "Kiln-01",
-    "status": "In Progress",
-    "start_date": "2026-03-03T08:00:00Z",
-    "end_date": "2026-03-05T08:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1052",
-    "mo_id": "MO-025",
-    "routing_step": 10,
-    "description": "Turning",
-    "assigned_resource": "Lathe-01",
-    "status": "Completed",
-    "start_date": "2026-03-02T08:00:00Z",
-    "end_date": "2026-03-02T17:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1053",
-    "mo_id": "MO-025",
-    "routing_step": 20,
-    "description": "Threading",
-    "assigned_resource": "Lathe-01",
-    "status": "In Progress",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T12:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1054",
-    "mo_id": "MO-026",
-    "routing_step": 10,
-    "description": "Vacuum Forming",
-    "assigned_resource": "Vac-03",
-    "status": "Completed",
-    "start_date": "2026-03-03T08:00:00Z",
-    "end_date": "2026-03-03T15:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1055",
-    "mo_id": "MO-027",
-    "routing_step": 10,
-    "description": "Component Sorting",
-    "assigned_resource": "Manual-01",
-    "status": "Completed",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T10:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1056",
-    "mo_id": "MO-028",
-    "routing_step": 10,
-    "description": "Surface Prep",
-    "assigned_resource": "Station-B",
-    "status": "In Progress",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T12:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1057",
-    "mo_id": "MO-029",
-    "routing_step": 10,
-    "description": "Knitting",
-    "assigned_resource": "Knit-01",
-    "status": "Completed",
-    "start_date": "2026-03-01T08:00:00Z",
-    "end_date": "2026-03-03T08:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1058",
-    "mo_id": "MO-029",
-    "routing_step": 20,
-    "description": "Steam Pressing",
-    "assigned_resource": "Press-04",
-    "status": "Planned",
-    "start_date": "2026-03-05T08:00:00Z",
-    "end_date": "2026-03-05T12:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1059",
-    "mo_id": "MO-030",
-    "routing_step": 10,
-    "description": "Rubber Compounding",
-    "assigned_resource": "Mixer-01",
-    "status": "Completed",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T11:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1060",
-    "mo_id": "MO-030",
-    "routing_step": 20,
-    "description": "Vulcanizing",
-    "assigned_resource": "Press-V1",
-    "status": "Planned",
-    "start_date": "2026-03-05T08:00:00Z",
-    "end_date": "2026-03-05T17:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1061",
-    "mo_id": "MO-031",
-    "routing_step": 10,
-    "description": "Wire Drawing",
-    "assigned_resource": "Draw-01",
-    "status": "Completed",
-    "start_date": "2026-03-02T08:00:00Z",
-    "end_date": "2026-03-02T17:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1062",
-    "mo_id": "MO-032",
-    "routing_step": 10,
-    "description": "Grinding",
-    "assigned_resource": "Grinder-01",
-    "status": "In Progress",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T16:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1063",
-    "mo_id": "MO-033",
-    "routing_step": 10,
-    "description": "Polishing",
-    "assigned_resource": "Manual-02",
-    "status": "Planned",
-    "start_date": "2026-03-05T08:00:00Z",
-    "end_date": "2026-03-05T12:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1064",
-    "mo_id": "MO-034",
-    "routing_step": 10,
-    "description": "Degreasing",
-    "assigned_resource": "Tank-01",
-    "status": "Completed",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T09:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1065",
-    "mo_id": "MO-034",
-    "routing_step": 20,
-    "description": "Plating",
-    "assigned_resource": "Tank-02",
-    "status": "Planned",
-    "start_date": "2026-03-06T08:00:00Z",
-    "end_date": "2026-03-06T12:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1066",
-    "mo_id": "MO-035",
-    "routing_step": 10,
-    "description": "Braiding",
-    "assigned_resource": "Braid-01",
-    "status": "In Progress",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T17:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1067",
-    "mo_id": "MO-036",
-    "routing_step": 10,
-    "description": "Etching",
-    "assigned_resource": "Etch-01",
-    "status": "Completed",
-    "start_date": "2026-03-03T08:00:00Z",
-    "end_date": "2026-03-03T11:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1068",
-    "mo_id": "MO-037",
-    "routing_step": 10,
-    "description": "Laminating",
-    "assigned_resource": "Lam-01",
-    "status": "Completed",
-    "start_date": "2026-03-02T08:00:00Z",
-    "end_date": "2026-03-02T15:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1069",
-    "mo_id": "MO-038",
-    "routing_step": 10,
-    "description": "Riveting",
-    "assigned_resource": "Station-D",
-    "status": "In Progress",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T12:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1070",
-    "mo_id": "MO-039",
-    "routing_step": 10,
-    "description": "Soldering",
-    "assigned_resource": "Bench-08",
-    "status": "Completed",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T11:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1071",
-    "mo_id": "MO-040",
-    "routing_step": 10,
-    "description": "Honing",
-    "assigned_resource": "Hone-01",
-    "status": "Planned",
-    "start_date": "2026-03-06T08:00:00Z",
-    "end_date": "2026-03-06T10:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1072",
-    "mo_id": "MO-041",
-    "routing_step": 10,
-    "description": "Lapping",
-    "assigned_resource": "Lap-01",
-    "status": "In Progress",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T15:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1073",
-    "mo_id": "MO-042",
-    "routing_step": 10,
-    "description": "Annealing",
-    "assigned_resource": "Oven-01",
-    "status": "Completed",
-    "start_date": "2026-03-01T08:00:00Z",
-    "end_date": "2026-03-02T08:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1074",
-    "mo_id": "MO-043",
-    "routing_step": 10,
-    "description": "Tapping",
-    "assigned_resource": "Station-E",
-    "status": "Completed",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T10:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1075",
-    "mo_id": "MO-044",
-    "routing_step": 10,
-    "description": "Punching",
-    "assigned_resource": "Press-05",
-    "status": "In Progress",
-    "start_date": "2026-03-04T13:00:00Z",
-    "end_date": "2026-03-04T17:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1076",
-    "mo_id": "MO-045",
-    "routing_step": 10,
-    "description": "Broaching",
-    "assigned_resource": "Broach-01",
-    "status": "Planned",
-    "start_date": "2026-03-07T08:00:00Z",
-    "end_date": "2026-03-07T12:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1077",
-    "mo_id": "MO-046",
-    "routing_step": 10,
-    "description": "Sanding",
-    "assigned_resource": "Sander-01",
-    "status": "Completed",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T12:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1078",
-    "mo_id": "MO-047",
-    "routing_step": 10,
-    "description": "Varnishing",
-    "assigned_resource": "Booth-03",
-    "status": "Planned",
-    "start_date": "2026-03-05T08:00:00Z",
-    "end_date": "2026-03-05T17:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1079",
-    "mo_id": "MO-048",
-    "routing_step": 10,
-    "description": "Chamfering",
-    "assigned_resource": "Station-F",
-    "status": "Completed",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T09:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1080",
-    "mo_id": "MO-049",
-    "routing_step": 10,
-    "description": "Reaming",
-    "assigned_resource": "Station-G",
-    "status": "In Progress",
-    "start_date": "2026-03-04T10:00:00Z",
-    "end_date": "2026-03-04T12:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1081",
-    "mo_id": "MO-050",
-    "routing_step": 10,
-    "description": "Final Audit",
-    "assigned_resource": "QC-Desk",
-    "status": "Planned",
-    "start_date": "2026-03-05T08:00:00Z",
-    "end_date": "2026-03-05T09:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1082",
-    "mo_id": "MO-051",
-    "routing_step": 10,
-    "description": "Material Prep",
-    "assigned_resource": "Station-A",
-    "status": "Completed",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T10:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1083",
-    "mo_id": "MO-052",
-    "routing_step": 10,
-    "description": "Cutting",
-    "assigned_resource": "Saw-01",
-    "status": "Completed",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T09:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1084",
-    "mo_id": "MO-053",
-    "routing_step": 10,
-    "description": "Drilling",
-    "assigned_resource": "Drill-02",
-    "status": "In Progress",
-    "start_date": "2026-03-04T14:00:00Z",
-    "end_date": "2026-03-04T16:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1085",
-    "mo_id": "MO-054",
-    "routing_step": 10,
-    "description": "Milling",
-    "assigned_resource": "CNC-03",
-    "status": "Planned",
-    "start_date": "2026-03-05T08:00:00Z",
-    "end_date": "2026-03-05T12:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1086",
-    "mo_id": "MO-055",
-    "routing_step": 10,
-    "description": "Grinding",
-    "assigned_resource": "Grinder-02",
-    "status": "Completed",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T10:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1087",
-    "mo_id": "MO-056",
-    "routing_step": 10,
-    "description": "Inspection",
-    "assigned_resource": "Lab-2",
-    "status": "Planned",
-    "start_date": "2026-03-06T08:00:00Z",
-    "end_date": "2026-03-06T09:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1088",
-    "mo_id": "MO-057",
-    "routing_step": 10,
-    "description": "Packaging",
-    "assigned_resource": "Pack-02",
-    "status": "Planned",
-    "start_date": "2026-03-06T10:00:00Z",
-    "end_date": "2026-03-06T12:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1089",
-    "mo_id": "MO-058",
-    "routing_step": 10,
-    "description": "Sorting",
-    "assigned_resource": "Station-H",
-    "status": "Completed",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T10:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1090",
-    "mo_id": "MO-059",
-    "routing_step": 10,
-    "description": "Cleaning",
-    "assigned_resource": "Wash-Line",
-    "status": "In Progress",
-    "start_date": "2026-03-04T15:00:00Z",
-    "end_date": "2026-03-04T17:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1091",
-    "mo_id": "MO-060",
-    "routing_step": 10,
-    "description": "Kitting",
-    "assigned_resource": "Warehouse",
-    "status": "Planned",
-    "start_date": "2026-03-05T08:00:00Z",
-    "end_date": "2026-03-05T10:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1092",
-    "mo_id": "MO-061",
-    "routing_step": 10,
-    "description": "Assembly",
-    "assigned_resource": "Bench-09",
-    "status": "Planned",
-    "start_date": "2026-03-05T11:00:00Z",
-    "end_date": "2026-03-05T15:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1093",
-    "mo_id": "MO-062",
-    "routing_step": 10,
-    "description": "Testing",
-    "assigned_resource": "Test-Bench",
-    "status": "Planned",
-    "start_date": "2026-03-06T08:00:00Z",
-    "end_date": "2026-03-06T12:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1094",
-    "mo_id": "MO-063",
-    "routing_step": 10,
-    "description": "Wrapping",
-    "assigned_resource": "Station-I",
-    "status": "Completed",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T09:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1095",
-    "mo_id": "MO-064",
-    "routing_step": 10,
-    "description": "Labeling",
-    "assigned_resource": "Station-J",
-    "status": "Completed",
-    "start_date": "2026-03-04T10:00:00Z",
-    "end_date": "2026-03-04T11:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1096",
-    "mo_id": "MO-065",
-    "routing_step": 10,
-    "description": "Loading",
-    "assigned_resource": "Dock-1",
-    "status": "Planned",
-    "start_date": "2026-03-07T08:00:00Z",
-    "end_date": "2026-03-07T10:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1097",
-    "mo_id": "MO-066",
-    "routing_step": 10,
-    "description": "Staging",
-    "assigned_resource": "Dock-2",
-    "status": "In Progress",
-    "start_date": "2026-03-04T16:00:00Z",
-    "end_date": "2026-03-04T18:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1098",
-    "mo_id": "MO-067",
-    "routing_step": 10,
-    "description": "Polishing",
-    "assigned_resource": "Manual-03",
-    "status": "Planned",
-    "start_date": "2026-03-06T08:00:00Z",
-    "end_date": "2026-03-06T12:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1099",
-    "mo_id": "MO-068",
-    "routing_step": 10,
-    "description": "Deburring",
-    "assigned_resource": "Manual-04",
-    "status": "Completed",
-    "start_date": "2026-03-04T08:00:00Z",
-    "end_date": "2026-03-04T10:00:00Z"
-  },
-  {
-    "work_order_id": "WO-1100",
-    "mo_id": "MO-069",
-    "routing_step": 10,
-    "description": "Final Wrap",
-    "assigned_resource": "Station-K",
-    "status": "Planned",
-    "start_date": "2026-03-07T08:00:00Z",
-    "end_date": "2026-03-07T09:00:00Z"
-  }
-]
+{
+  "manufacturingOrders": [
+    {
+      "docId": "MO-001",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO-2026-001",
+        "itemId": "ITEM-FRAME-A",
+        "quantity": 50,
+        "dueDate": "2026-03-20T23:59:00Z"
+      }
+    },
+    {
+      "docId": "MO-002",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO-2026-002",
+        "itemId": "ITEM-BRACKET-B",
+        "quantity": 120,
+        "dueDate": "2026-03-18T23:59:00Z"
+      }
+    },
+    {
+      "docId": "MO-003",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO-2026-003",
+        "itemId": "ITEM-PANEL-C",
+        "quantity": 75,
+        "dueDate": "2026-03-22T23:59:00Z"
+      }
+    },
+    {
+      "docId": "MO-004",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO-2026-004",
+        "itemId": "ITEM-SHAFT-D",
+        "quantity": 30,
+        "dueDate": "2026-03-15T23:59:00Z"
+      }
+    },
+    {
+      "docId": "MO-005",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO-2026-005",
+        "itemId": "ITEM-GEAR-E",
+        "quantity": 200,
+        "dueDate": "2026-03-25T23:59:00Z"
+      }
+    },
+    {
+      "docId": "MO-006",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO-2026-006",
+        "itemId": "ITEM-HOUSING-F",
+        "quantity": 40,
+        "dueDate": "2026-03-17T23:59:00Z"
+      }
+    },
+    {
+      "docId": "MO-007",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO-2026-007",
+        "itemId": "ITEM-VALVE-G",
+        "quantity": 90,
+        "dueDate": "2026-03-19T23:59:00Z"
+      }
+    },
+    {
+      "docId": "MO-008",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO-2026-008",
+        "itemId": "ITEM-COVER-H",
+        "quantity": 60,
+        "dueDate": "2026-03-21T23:59:00Z"
+      }
+    },
+    {
+      "docId": "MO-009",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO-2026-009",
+        "itemId": "ITEM-ROD-I",
+        "quantity": 150,
+        "dueDate": "2026-03-24T23:59:00Z"
+      }
+    },
+    {
+      "docId": "MO-010",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO-2026-010",
+        "itemId": "ITEM-SPRING-J",
+        "quantity": 500,
+        "dueDate": "2026-03-16T23:59:00Z"
+      }
+    },
+    {
+      "docId": "MO-011",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO-2026-011",
+        "itemId": "ITEM-BEARING-K",
+        "quantity": 80,
+        "dueDate": "2026-03-23T23:59:00Z"
+      }
+    },
+    {
+      "docId": "MO-012",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO-2026-012",
+        "itemId": "ITEM-PULLEY-L",
+        "quantity": 35,
+        "dueDate": "2026-03-18T23:59:00Z"
+      }
+    },
+    {
+      "docId": "MO-013",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO-2026-013",
+        "itemId": "ITEM-FLANGE-M",
+        "quantity": 110,
+        "dueDate": "2026-03-20T23:59:00Z"
+      }
+    },
+    {
+      "docId": "MO-014",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO-2026-014",
+        "itemId": "ITEM-CLAMP-N",
+        "quantity": 65,
+        "dueDate": "2026-03-22T23:59:00Z"
+      }
+    },
+    {
+      "docId": "MO-015",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO-2026-015",
+        "itemId": "ITEM-NOZZLE-O",
+        "quantity": 45,
+        "dueDate": "2026-03-19T23:59:00Z"
+      }
+    },
+    {
+      "docId": "MO-016",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO-2026-016",
+        "itemId": "ITEM-BUSHING-P",
+        "quantity": 300,
+        "dueDate": "2026-03-25T23:59:00Z"
+      }
+    },
+    {
+      "docId": "MO-017",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO-2026-017",
+        "itemId": "ITEM-SEAL-Q",
+        "quantity": 250,
+        "dueDate": "2026-03-17T23:59:00Z"
+      }
+    },
+    {
+      "docId": "MO-018",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO-2026-018",
+        "itemId": "ITEM-PIPE-R",
+        "quantity": 55,
+        "dueDate": "2026-03-21T23:59:00Z"
+      }
+    },
+    {
+      "docId": "MO-019",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO-2026-019",
+        "itemId": "ITEM-COUPLING-S",
+        "quantity": 70,
+        "dueDate": "2026-03-24T23:59:00Z"
+      }
+    },
+    {
+      "docId": "MO-020",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO-2026-020",
+        "itemId": "ITEM-ADAPTER-T",
+        "quantity": 95,
+        "dueDate": "2026-03-25T23:59:00Z"
+      }
+    }
+  ],
+  "workCenters": [
+    {
+      "docId": "WC-001",
+      "docType": "workCenter",
+      "data": {
+        "name": "Cutting Station",
+        "shifts": [
+          {
+            "dayOfWeek": 1,
+            "startHour": 6,
+            "endHour": 14
+          },
+          {
+            "dayOfWeek": 1,
+            "startHour": 14,
+            "endHour": 22
+          },
+          {
+            "dayOfWeek": 2,
+            "startHour": 6,
+            "endHour": 14
+          },
+          {
+            "dayOfWeek": 2,
+            "startHour": 14,
+            "endHour": 22
+          },
+          {
+            "dayOfWeek": 3,
+            "startHour": 6,
+            "endHour": 14
+          },
+          {
+            "dayOfWeek": 3,
+            "startHour": 14,
+            "endHour": 22
+          },
+          {
+            "dayOfWeek": 4,
+            "startHour": 6,
+            "endHour": 14
+          },
+          {
+            "dayOfWeek": 4,
+            "startHour": 14,
+            "endHour": 22
+          },
+          {
+            "dayOfWeek": 5,
+            "startHour": 6,
+            "endHour": 14
+          },
+          {
+            "dayOfWeek": 5,
+            "startHour": 14,
+            "endHour": 22
+          }
+        ],
+        "maintenanceWindows": [
+          {
+            "startDate": "2026-03-10T22:00:00Z",
+            "endDate": "2026-03-11T06:00:00Z",
+            "reason": "Blade replacement and calibration"
+          },
+          {
+            "startDate": "2026-03-17T22:00:00Z",
+            "endDate": "2026-03-18T06:00:00Z",
+            "reason": "Weekly preventive maintenance"
+          }
+        ]
+      }
+    },
+    {
+      "docId": "WC-002",
+      "docType": "workCenter",
+      "data": {
+        "name": "Welding Station",
+        "shifts": [
+          {
+            "dayOfWeek": 1,
+            "startHour": 7,
+            "endHour": 15
+          },
+          {
+            "dayOfWeek": 1,
+            "startHour": 15,
+            "endHour": 23
+          },
+          {
+            "dayOfWeek": 2,
+            "startHour": 7,
+            "endHour": 15
+          },
+          {
+            "dayOfWeek": 2,
+            "startHour": 15,
+            "endHour": 23
+          },
+          {
+            "dayOfWeek": 3,
+            "startHour": 7,
+            "endHour": 15
+          },
+          {
+            "dayOfWeek": 3,
+            "startHour": 15,
+            "endHour": 23
+          },
+          {
+            "dayOfWeek": 4,
+            "startHour": 7,
+            "endHour": 15
+          },
+          {
+            "dayOfWeek": 4,
+            "startHour": 15,
+            "endHour": 23
+          },
+          {
+            "dayOfWeek": 5,
+            "startHour": 7,
+            "endHour": 15
+          },
+          {
+            "dayOfWeek": 5,
+            "startHour": 15,
+            "endHour": 23
+          }
+        ],
+        "maintenanceWindows": [
+          {
+            "startDate": "2026-03-12T15:00:00Z",
+            "endDate": "2026-03-12T19:00:00Z",
+            "reason": "Welding torch inspection and gas line check"
+          },
+          {
+            "startDate": "2026-03-19T07:00:00Z",
+            "endDate": "2026-03-19T11:00:00Z",
+            "reason": "Monthly equipment certification"
+          }
+        ]
+      }
+    },
+    {
+      "docId": "WC-003",
+      "docType": "workCenter",
+      "data": {
+        "name": "Painting & Coating Station",
+        "shifts": [
+          {
+            "dayOfWeek": 1,
+            "startHour": 8,
+            "endHour": 16
+          },
+          {
+            "dayOfWeek": 2,
+            "startHour": 8,
+            "endHour": 16
+          },
+          {
+            "dayOfWeek": 3,
+            "startHour": 8,
+            "endHour": 16
+          },
+          {
+            "dayOfWeek": 4,
+            "startHour": 8,
+            "endHour": 16
+          },
+          {
+            "dayOfWeek": 5,
+            "startHour": 8,
+            "endHour": 16
+          },
+          {
+            "dayOfWeek": 6,
+            "startHour": 8,
+            "endHour": 12
+          }
+        ],
+        "maintenanceWindows": [
+          {
+            "startDate": "2026-03-14T16:00:00Z",
+            "endDate": "2026-03-15T08:00:00Z",
+            "reason": "Paint booth deep clean and filter replacement"
+          }
+        ]
+      }
+    },
+    {
+      "docId": "WC-004",
+      "docType": "workCenter",
+      "data": {
+        "name": "Assembly Line A",
+        "shifts": [
+          {
+            "dayOfWeek": 1,
+            "startHour": 6,
+            "endHour": 14
+          },
+          {
+            "dayOfWeek": 1,
+            "startHour": 14,
+            "endHour": 22
+          },
+          {
+            "dayOfWeek": 1,
+            "startHour": 22,
+            "endHour": 6
+          },
+          {
+            "dayOfWeek": 2,
+            "startHour": 6,
+            "endHour": 14
+          },
+          {
+            "dayOfWeek": 2,
+            "startHour": 14,
+            "endHour": 22
+          },
+          {
+            "dayOfWeek": 2,
+            "startHour": 22,
+            "endHour": 6
+          },
+          {
+            "dayOfWeek": 3,
+            "startHour": 6,
+            "endHour": 14
+          },
+          {
+            "dayOfWeek": 3,
+            "startHour": 14,
+            "endHour": 22
+          },
+          {
+            "dayOfWeek": 3,
+            "startHour": 22,
+            "endHour": 6
+          },
+          {
+            "dayOfWeek": 4,
+            "startHour": 6,
+            "endHour": 14
+          },
+          {
+            "dayOfWeek": 4,
+            "startHour": 14,
+            "endHour": 22
+          },
+          {
+            "dayOfWeek": 4,
+            "startHour": 22,
+            "endHour": 6
+          },
+          {
+            "dayOfWeek": 5,
+            "startHour": 6,
+            "endHour": 14
+          },
+          {
+            "dayOfWeek": 5,
+            "startHour": 14,
+            "endHour": 22
+          }
+        ],
+        "maintenanceWindows": [
+          {
+            "startDate": "2026-03-08T22:00:00Z",
+            "endDate": "2026-03-09T04:00:00Z",
+            "reason": "Conveyor belt lubrication and tension adjustment"
+          },
+          {
+            "startDate": "2026-03-22T22:00:00Z",
+            "endDate": "2026-03-23T06:00:00Z",
+            "reason": "Line retooling for new product variant"
+          }
+        ]
+      }
+    },
+    {
+      "docId": "WC-005",
+      "docType": "workCenter",
+      "data": {
+        "name": "Quality Control",
+        "shifts": [
+          {
+            "dayOfWeek": 1,
+            "startHour": 8,
+            "endHour": 17
+          },
+          {
+            "dayOfWeek": 2,
+            "startHour": 8,
+            "endHour": 17
+          },
+          {
+            "dayOfWeek": 3,
+            "startHour": 8,
+            "endHour": 17
+          },
+          {
+            "dayOfWeek": 4,
+            "startHour": 8,
+            "endHour": 17
+          },
+          {
+            "dayOfWeek": 5,
+            "startHour": 8,
+            "endHour": 17
+          }
+        ],
+        "maintenanceWindows": [
+          {
+            "startDate": "2026-03-20T08:00:00Z",
+            "endDate": "2026-03-20T12:00:00Z",
+            "reason": "Calibration of measurement instruments"
+          }
+        ]
+      }
+    }
+  ],
+  "workOrders": [
+    {
+      "docId": "WO-001",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-001",
+        "manufacturingOrderId": "MO-001",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-04T06:00:00Z",
+        "endDate": "2026-03-04T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO-002",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-002",
+        "manufacturingOrderId": "MO-001",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-04T14:00:00Z",
+        "endDate": "2026-03-04T22:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-001"]
+      }
+    },
+    {
+      "docId": "WO-003",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-003",
+        "manufacturingOrderId": "MO-001",
+        "workCenterId": "WC-002",
+        "startDate": "2026-03-05T07:00:00Z",
+        "endDate": "2026-03-05T15:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-001", "WO-002"]
+      }
+    },
+    {
+      "docId": "WO-004",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-004",
+        "manufacturingOrderId": "MO-001",
+        "workCenterId": "WC-003",
+        "startDate": "2026-03-06T08:00:00Z",
+        "endDate": "2026-03-06T16:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-003"]
+      }
+    },
+    {
+      "docId": "WO-005",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-005",
+        "manufacturingOrderId": "MO-001",
+        "workCenterId": "WC-004",
+        "startDate": "2026-03-09T06:00:00Z",
+        "endDate": "2026-03-09T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-004"]
+      }
+    },
+    {
+      "docId": "WO-006",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-006",
+        "manufacturingOrderId": "MO-001",
+        "workCenterId": "WC-005",
+        "startDate": "2026-03-10T08:00:00Z",
+        "endDate": "2026-03-10T14:00:00Z",
+        "durationMinutes": 360,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-005"]
+      }
+    },
+    {
+      "docId": "WO-007",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-007",
+        "manufacturingOrderId": "MO-002",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-04T06:00:00Z",
+        "endDate": "2026-03-04T12:00:00Z",
+        "durationMinutes": 360,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO-008",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-008",
+        "manufacturingOrderId": "MO-002",
+        "workCenterId": "WC-002",
+        "startDate": "2026-03-05T11:00:00Z",
+        "endDate": "2026-03-05T19:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-007"]
+      }
+    },
+    {
+      "docId": "WO-009",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-009",
+        "manufacturingOrderId": "MO-002",
+        "workCenterId": "WC-002",
+        "startDate": "2026-03-05T19:00:00Z",
+        "endDate": "2026-03-05T23:00:00Z",
+        "durationMinutes": 240,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-008"]
+      }
+    },
+    {
+      "docId": "WO-010",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-010",
+        "manufacturingOrderId": "MO-002",
+        "workCenterId": "WC-003",
+        "startDate": "2026-03-06T08:00:00Z",
+        "endDate": "2026-03-06T14:00:00Z",
+        "durationMinutes": 360,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-008", "WO-009"]
+      }
+    },
+    {
+      "docId": "WO-011",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-011",
+        "manufacturingOrderId": "MO-002",
+        "workCenterId": "WC-004",
+        "startDate": "2026-03-09T14:00:00Z",
+        "endDate": "2026-03-09T22:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-010"]
+      }
+    },
+    {
+      "docId": "WO-012",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-012",
+        "manufacturingOrderId": "MO-002",
+        "workCenterId": "WC-005",
+        "startDate": "2026-03-10T08:00:00Z",
+        "endDate": "2026-03-10T17:00:00Z",
+        "durationMinutes": 540,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-011"]
+      }
+    },
+    {
+      "docId": "WO-013",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-013",
+        "manufacturingOrderId": "MO-003",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-09T06:00:00Z",
+        "endDate": "2026-03-09T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO-014",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-014",
+        "manufacturingOrderId": "MO-003",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-09T14:00:00Z",
+        "endDate": "2026-03-09T22:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-013"]
+      }
+    },
+    {
+      "docId": "WO-015",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-015",
+        "manufacturingOrderId": "MO-003",
+        "workCenterId": "WC-002",
+        "startDate": "2026-03-12T15:00:00Z",
+        "endDate": "2026-03-12T19:00:00Z",
+        "durationMinutes": 240,
+        "isMaintenance": true,
+        "dependsOnWorkOrderIds": ["WO-013", "WO-014"]
+      }
+    },
+    {
+      "docId": "WO-016",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-016",
+        "manufacturingOrderId": "MO-003",
+        "workCenterId": "WC-003",
+        "startDate": "2026-03-13T08:00:00Z",
+        "endDate": "2026-03-13T16:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-015"]
+      }
+    },
+    {
+      "docId": "WO-017",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-017",
+        "manufacturingOrderId": "MO-003",
+        "workCenterId": "WC-005",
+        "startDate": "2026-03-16T08:00:00Z",
+        "endDate": "2026-03-16T14:00:00Z",
+        "durationMinutes": 360,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-016"]
+      }
+    },
+    {
+      "docId": "WO-018",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-018",
+        "manufacturingOrderId": "MO-004",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-04T06:00:00Z",
+        "endDate": "2026-03-04T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO-019",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-019",
+        "manufacturingOrderId": "MO-004",
+        "workCenterId": "WC-002",
+        "startDate": "2026-03-05T07:00:00Z",
+        "endDate": "2026-03-05T13:00:00Z",
+        "durationMinutes": 360,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-018"]
+      }
+    },
+    {
+      "docId": "WO-020",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-020",
+        "manufacturingOrderId": "MO-004",
+        "workCenterId": "WC-003",
+        "startDate": "2026-03-06T08:00:00Z",
+        "endDate": "2026-03-06T12:00:00Z",
+        "durationMinutes": 240,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-019"]
+      }
+    },
+    {
+      "docId": "WO-021",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-021",
+        "manufacturingOrderId": "MO-004",
+        "workCenterId": "WC-004",
+        "startDate": "2026-03-09T06:00:00Z",
+        "endDate": "2026-03-09T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-020"]
+      }
+    },
+    {
+      "docId": "WO-022",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-022",
+        "manufacturingOrderId": "MO-004",
+        "workCenterId": "WC-005",
+        "startDate": "2026-03-10T08:00:00Z",
+        "endDate": "2026-03-10T13:00:00Z",
+        "durationMinutes": 300,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-021"]
+      }
+    },
+    {
+      "docId": "WO-023",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-023",
+        "manufacturingOrderId": "MO-005",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-11T06:00:00Z",
+        "endDate": "2026-03-11T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO-024",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-024",
+        "manufacturingOrderId": "MO-005",
+        "workCenterId": "WC-004",
+        "startDate": "2026-03-12T14:00:00Z",
+        "endDate": "2026-03-13T04:00:00Z",
+        "durationMinutes": 840,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-023"]
+      }
+    },
+    {
+      "docId": "WO-025",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-025",
+        "manufacturingOrderId": "MO-005",
+        "workCenterId": "WC-002",
+        "startDate": "2026-03-13T07:00:00Z",
+        "endDate": "2026-03-13T13:00:00Z",
+        "durationMinutes": 360,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-024"]
+      }
+    },
+    {
+      "docId": "WO-026",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-026",
+        "manufacturingOrderId": "MO-005",
+        "workCenterId": "WC-003",
+        "startDate": "2026-03-16T08:00:00Z",
+        "endDate": "2026-03-16T14:00:00Z",
+        "durationMinutes": 360,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-025"]
+      }
+    },
+    {
+      "docId": "WO-027",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-027",
+        "manufacturingOrderId": "MO-005",
+        "workCenterId": "WC-004",
+        "startDate": "2026-03-17T06:00:00Z",
+        "endDate": "2026-03-17T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-026"]
+      }
+    },
+    {
+      "docId": "WO-028",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-028",
+        "manufacturingOrderId": "MO-005",
+        "workCenterId": "WC-005",
+        "startDate": "2026-03-18T08:00:00Z",
+        "endDate": "2026-03-18T17:00:00Z",
+        "durationMinutes": 540,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-027"]
+      }
+    },
+    {
+      "docId": "WO-029",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-029",
+        "manufacturingOrderId": "MO-006",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-05T06:00:00Z",
+        "endDate": "2026-03-05T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO-030",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-030",
+        "manufacturingOrderId": "MO-006",
+        "workCenterId": "WC-002",
+        "startDate": "2026-03-06T07:00:00Z",
+        "endDate": "2026-03-06T15:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-029"]
+      }
+    },
+    {
+      "docId": "WO-031",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-031",
+        "manufacturingOrderId": "MO-006",
+        "workCenterId": "WC-004",
+        "startDate": "2026-03-08T22:00:00Z",
+        "endDate": "2026-03-09T04:00:00Z",
+        "durationMinutes": 360,
+        "isMaintenance": true,
+        "dependsOnWorkOrderIds": ["WO-030"]
+      }
+    },
+    {
+      "docId": "WO-032",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-032",
+        "manufacturingOrderId": "MO-006",
+        "workCenterId": "WC-003",
+        "startDate": "2026-03-09T08:00:00Z",
+        "endDate": "2026-03-09T14:00:00Z",
+        "durationMinutes": 360,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-031"]
+      }
+    },
+    {
+      "docId": "WO-033",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-033",
+        "manufacturingOrderId": "MO-006",
+        "workCenterId": "WC-005",
+        "startDate": "2026-03-10T08:00:00Z",
+        "endDate": "2026-03-10T13:00:00Z",
+        "durationMinutes": 300,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-032"]
+      }
+    },
+    {
+      "docId": "WO-034",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-034",
+        "manufacturingOrderId": "MO-007",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-10T06:00:00Z",
+        "endDate": "2026-03-10T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO-035",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-035",
+        "manufacturingOrderId": "MO-007",
+        "workCenterId": "WC-002",
+        "startDate": "2026-03-11T07:00:00Z",
+        "endDate": "2026-03-11T15:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-034"]
+      }
+    },
+    {
+      "docId": "WO-036",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-036",
+        "manufacturingOrderId": "MO-007",
+        "workCenterId": "WC-003",
+        "startDate": "2026-03-12T08:00:00Z",
+        "endDate": "2026-03-12T14:00:00Z",
+        "durationMinutes": 360,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-035"]
+      }
+    },
+    {
+      "docId": "WO-037",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-037",
+        "manufacturingOrderId": "MO-007",
+        "workCenterId": "WC-004",
+        "startDate": "2026-03-13T06:00:00Z",
+        "endDate": "2026-03-13T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-036"]
+      }
+    },
+    {
+      "docId": "WO-038",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-038",
+        "manufacturingOrderId": "MO-007",
+        "workCenterId": "WC-005",
+        "startDate": "2026-03-16T08:00:00Z",
+        "endDate": "2026-03-16T14:00:00Z",
+        "durationMinutes": 360,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-037"]
+      }
+    },
+    {
+      "docId": "WO-039",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-039",
+        "manufacturingOrderId": "MO-008",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-04T06:00:00Z",
+        "endDate": "2026-03-04T12:00:00Z",
+        "durationMinutes": 360,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO-040",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-040",
+        "manufacturingOrderId": "MO-008",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-05T12:00:00Z",
+        "endDate": "2026-03-05T22:00:00Z",
+        "durationMinutes": 600,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-039"]
+      }
+    },
+    {
+      "docId": "WO-041",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-041",
+        "manufacturingOrderId": "MO-008",
+        "workCenterId": "WC-002",
+        "startDate": "2026-03-06T07:00:00Z",
+        "endDate": "2026-03-06T15:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-040"]
+      }
+    },
+    {
+      "docId": "WO-042",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-042",
+        "manufacturingOrderId": "MO-008",
+        "workCenterId": "WC-004",
+        "startDate": "2026-03-09T06:00:00Z",
+        "endDate": "2026-03-09T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-041"]
+      }
+    },
+    {
+      "docId": "WO-043",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-043",
+        "manufacturingOrderId": "MO-008",
+        "workCenterId": "WC-005",
+        "startDate": "2026-03-10T08:00:00Z",
+        "endDate": "2026-03-10T14:00:00Z",
+        "durationMinutes": 360,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-042"]
+      }
+    },
+    {
+      "docId": "WO-044",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-044",
+        "manufacturingOrderId": "MO-009",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-09T06:00:00Z",
+        "endDate": "2026-03-09T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO-045",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-045",
+        "manufacturingOrderId": "MO-009",
+        "workCenterId": "WC-002",
+        "startDate": "2026-03-10T07:00:00Z",
+        "endDate": "2026-03-10T13:00:00Z",
+        "durationMinutes": 360,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-044"]
+      }
+    },
+    {
+      "docId": "WO-046",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-046",
+        "manufacturingOrderId": "MO-009",
+        "workCenterId": "WC-003",
+        "startDate": "2026-03-10T08:00:00Z",
+        "endDate": "2026-03-10T12:00:00Z",
+        "durationMinutes": 240,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-044"]
+      }
+    },
+    {
+      "docId": "WO-047",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-047",
+        "manufacturingOrderId": "MO-009",
+        "workCenterId": "WC-002",
+        "startDate": "2026-03-11T07:00:00Z",
+        "endDate": "2026-03-11T13:00:00Z",
+        "durationMinutes": 360,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-045"]
+      }
+    },
+    {
+      "docId": "WO-048",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-048",
+        "manufacturingOrderId": "MO-009",
+        "workCenterId": "WC-003",
+        "startDate": "2026-03-11T08:00:00Z",
+        "endDate": "2026-03-11T14:00:00Z",
+        "durationMinutes": 360,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-046"]
+      }
+    },
+    {
+      "docId": "WO-049",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-049",
+        "manufacturingOrderId": "MO-009",
+        "workCenterId": "WC-005",
+        "startDate": "2026-03-12T08:00:00Z",
+        "endDate": "2026-03-12T14:00:00Z",
+        "durationMinutes": 360,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-047", "WO-048"]
+      }
+    },
+    {
+      "docId": "WO-050",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-050",
+        "manufacturingOrderId": "MO-010",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-10T06:00:00Z",
+        "endDate": "2026-03-10T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO-051",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-051",
+        "manufacturingOrderId": "MO-010",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-10T22:00:00Z",
+        "endDate": "2026-03-11T06:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": true,
+        "dependsOnWorkOrderIds": ["WO-050"]
+      }
+    },
+    {
+      "docId": "WO-052",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-052",
+        "manufacturingOrderId": "MO-010",
+        "workCenterId": "WC-002",
+        "startDate": "2026-03-11T07:00:00Z",
+        "endDate": "2026-03-11T15:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-051"]
+      }
+    },
+    {
+      "docId": "WO-053",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-053",
+        "manufacturingOrderId": "MO-010",
+        "workCenterId": "WC-004",
+        "startDate": "2026-03-12T06:00:00Z",
+        "endDate": "2026-03-12T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-052"]
+      }
+    },
+    {
+      "docId": "WO-054",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-054",
+        "manufacturingOrderId": "MO-010",
+        "workCenterId": "WC-005",
+        "startDate": "2026-03-13T08:00:00Z",
+        "endDate": "2026-03-13T13:00:00Z",
+        "durationMinutes": 300,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-053"]
+      }
+    },
+    {
+      "docId": "WO-055",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-055",
+        "manufacturingOrderId": "MO-011",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-11T06:00:00Z",
+        "endDate": "2026-03-11T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO-056",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-056",
+        "manufacturingOrderId": "MO-011",
+        "workCenterId": "WC-002",
+        "startDate": "2026-03-12T15:00:00Z",
+        "endDate": "2026-03-12T23:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-055"]
+      }
+    },
+    {
+      "docId": "WO-057",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-057",
+        "manufacturingOrderId": "MO-011",
+        "workCenterId": "WC-003",
+        "startDate": "2026-03-13T08:00:00Z",
+        "endDate": "2026-03-13T16:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-056"]
+      }
+    },
+    {
+      "docId": "WO-058",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-058",
+        "manufacturingOrderId": "MO-011",
+        "workCenterId": "WC-004",
+        "startDate": "2026-03-16T06:00:00Z",
+        "endDate": "2026-03-16T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-057"]
+      }
+    },
+    {
+      "docId": "WO-059",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-059",
+        "manufacturingOrderId": "MO-011",
+        "workCenterId": "WC-004",
+        "startDate": "2026-03-16T14:00:00Z",
+        "endDate": "2026-03-16T22:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-058"]
+      }
+    },
+    {
+      "docId": "WO-060",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-060",
+        "manufacturingOrderId": "MO-011",
+        "workCenterId": "WC-005",
+        "startDate": "2026-03-17T08:00:00Z",
+        "endDate": "2026-03-17T17:00:00Z",
+        "durationMinutes": 540,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-059"]
+      }
+    },
+    {
+      "docId": "WO-061",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-061",
+        "manufacturingOrderId": "MO-012",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-04T14:00:00Z",
+        "endDate": "2026-03-04T22:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO-062",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-062",
+        "manufacturingOrderId": "MO-012",
+        "workCenterId": "WC-002",
+        "startDate": "2026-03-05T15:00:00Z",
+        "endDate": "2026-03-05T23:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-061"]
+      }
+    },
+    {
+      "docId": "WO-063",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-063",
+        "manufacturingOrderId": "MO-012",
+        "workCenterId": "WC-003",
+        "startDate": "2026-03-07T08:00:00Z",
+        "endDate": "2026-03-07T12:00:00Z",
+        "durationMinutes": 240,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-062"]
+      }
+    },
+    {
+      "docId": "WO-064",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-064",
+        "manufacturingOrderId": "MO-012",
+        "workCenterId": "WC-004",
+        "startDate": "2026-03-09T14:00:00Z",
+        "endDate": "2026-03-09T22:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-063"]
+      }
+    },
+    {
+      "docId": "WO-065",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-065",
+        "manufacturingOrderId": "MO-012",
+        "workCenterId": "WC-005",
+        "startDate": "2026-03-10T08:00:00Z",
+        "endDate": "2026-03-10T17:00:00Z",
+        "durationMinutes": 540,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-064"]
+      }
+    },
+    {
+      "docId": "WO-066",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-066",
+        "manufacturingOrderId": "MO-013",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-17T06:00:00Z",
+        "endDate": "2026-03-17T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO-067",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-067",
+        "manufacturingOrderId": "MO-013",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-17T14:00:00Z",
+        "endDate": "2026-03-17T22:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-066"]
+      }
+    },
+    {
+      "docId": "WO-068",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-068",
+        "manufacturingOrderId": "MO-013",
+        "workCenterId": "WC-002",
+        "startDate": "2026-03-19T07:00:00Z",
+        "endDate": "2026-03-19T11:00:00Z",
+        "durationMinutes": 240,
+        "isMaintenance": true,
+        "dependsOnWorkOrderIds": ["WO-066", "WO-067"]
+      }
+    },
+    {
+      "docId": "WO-069",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-069",
+        "manufacturingOrderId": "MO-013",
+        "workCenterId": "WC-004",
+        "startDate": "2026-03-20T06:00:00Z",
+        "endDate": "2026-03-20T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-068"]
+      }
+    },
+    {
+      "docId": "WO-070",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-070",
+        "manufacturingOrderId": "MO-013",
+        "workCenterId": "WC-005",
+        "startDate": "2026-03-23T08:00:00Z",
+        "endDate": "2026-03-23T14:00:00Z",
+        "durationMinutes": 360,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-069"]
+      }
+    },
+    {
+      "docId": "WO-071",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-071",
+        "manufacturingOrderId": "MO-014",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-16T06:00:00Z",
+        "endDate": "2026-03-16T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO-072",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-072",
+        "manufacturingOrderId": "MO-014",
+        "workCenterId": "WC-004",
+        "startDate": "2026-03-17T14:00:00Z",
+        "endDate": "2026-03-18T02:00:00Z",
+        "durationMinutes": 720,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-071"]
+      }
+    },
+    {
+      "docId": "WO-073",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-073",
+        "manufacturingOrderId": "MO-014",
+        "workCenterId": "WC-002",
+        "startDate": "2026-03-18T07:00:00Z",
+        "endDate": "2026-03-18T15:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-072"]
+      }
+    },
+    {
+      "docId": "WO-074",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-074",
+        "manufacturingOrderId": "MO-014",
+        "workCenterId": "WC-003",
+        "startDate": "2026-03-19T08:00:00Z",
+        "endDate": "2026-03-19T16:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-073"]
+      }
+    },
+    {
+      "docId": "WO-075",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-075",
+        "manufacturingOrderId": "MO-014",
+        "workCenterId": "WC-005",
+        "startDate": "2026-03-20T08:00:00Z",
+        "endDate": "2026-03-20T13:00:00Z",
+        "durationMinutes": 300,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-074"]
+      }
+    },
+    {
+      "docId": "WO-076",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-076",
+        "manufacturingOrderId": "MO-015",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-11T06:00:00Z",
+        "endDate": "2026-03-11T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO-077",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-077",
+        "manufacturingOrderId": "MO-015",
+        "workCenterId": "WC-002",
+        "startDate": "2026-03-12T07:00:00Z",
+        "endDate": "2026-03-12T15:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-076"]
+      }
+    },
+    {
+      "docId": "WO-078",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-078",
+        "manufacturingOrderId": "MO-015",
+        "workCenterId": "WC-003",
+        "startDate": "2026-03-14T16:00:00Z",
+        "endDate": "2026-03-15T00:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": true,
+        "dependsOnWorkOrderIds": ["WO-077"]
+      }
+    },
+    {
+      "docId": "WO-079",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-079",
+        "manufacturingOrderId": "MO-015",
+        "workCenterId": "WC-004",
+        "startDate": "2026-03-16T06:00:00Z",
+        "endDate": "2026-03-16T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-078"]
+      }
+    },
+    {
+      "docId": "WO-080",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-080",
+        "manufacturingOrderId": "MO-015",
+        "workCenterId": "WC-005",
+        "startDate": "2026-03-17T08:00:00Z",
+        "endDate": "2026-03-17T12:00:00Z",
+        "durationMinutes": 240,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-079"]
+      }
+    },
+    {
+      "docId": "WO-081",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-081",
+        "manufacturingOrderId": "MO-016",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-18T06:00:00Z",
+        "endDate": "2026-03-18T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO-082",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-082",
+        "manufacturingOrderId": "MO-016",
+        "workCenterId": "WC-002",
+        "startDate": "2026-03-19T07:00:00Z",
+        "endDate": "2026-03-19T15:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-081"]
+      }
+    },
+    {
+      "docId": "WO-083",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-083",
+        "manufacturingOrderId": "MO-016",
+        "workCenterId": "WC-003",
+        "startDate": "2026-03-20T08:00:00Z",
+        "endDate": "2026-03-20T16:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-082"]
+      }
+    },
+    {
+      "docId": "WO-084",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-084",
+        "manufacturingOrderId": "MO-016",
+        "workCenterId": "WC-004",
+        "startDate": "2026-03-23T06:00:00Z",
+        "endDate": "2026-03-23T22:00:00Z",
+        "durationMinutes": 960,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-083"]
+      }
+    },
+    {
+      "docId": "WO-085",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-085",
+        "manufacturingOrderId": "MO-016",
+        "workCenterId": "WC-005",
+        "startDate": "2026-03-24T08:00:00Z",
+        "endDate": "2026-03-24T17:00:00Z",
+        "durationMinutes": 540,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-084"]
+      }
+    },
+    {
+      "docId": "WO-086",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-086",
+        "manufacturingOrderId": "MO-017",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-04T06:00:00Z",
+        "endDate": "2026-03-04T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO-087",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-087",
+        "manufacturingOrderId": "MO-017",
+        "workCenterId": "WC-004",
+        "startDate": "2026-03-05T06:00:00Z",
+        "endDate": "2026-03-05T22:00:00Z",
+        "durationMinutes": 960,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-086"]
+      }
+    },
+    {
+      "docId": "WO-088",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-088",
+        "manufacturingOrderId": "MO-017",
+        "workCenterId": "WC-002",
+        "startDate": "2026-03-06T07:00:00Z",
+        "endDate": "2026-03-06T15:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-087"]
+      }
+    },
+    {
+      "docId": "WO-089",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-089",
+        "manufacturingOrderId": "MO-017",
+        "workCenterId": "WC-003",
+        "startDate": "2026-03-07T08:00:00Z",
+        "endDate": "2026-03-07T12:00:00Z",
+        "durationMinutes": 240,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-088"]
+      }
+    },
+    {
+      "docId": "WO-090",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-090",
+        "manufacturingOrderId": "MO-017",
+        "workCenterId": "WC-005",
+        "startDate": "2026-03-09T08:00:00Z",
+        "endDate": "2026-03-09T13:00:00Z",
+        "durationMinutes": 300,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-089"]
+      }
+    },
+    {
+      "docId": "WO-091",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-091",
+        "manufacturingOrderId": "MO-018",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-16T06:00:00Z",
+        "endDate": "2026-03-16T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO-092",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-092",
+        "manufacturingOrderId": "MO-018",
+        "workCenterId": "WC-002",
+        "startDate": "2026-03-17T07:00:00Z",
+        "endDate": "2026-03-17T15:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-091"]
+      }
+    },
+    {
+      "docId": "WO-093",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-093",
+        "manufacturingOrderId": "MO-018",
+        "workCenterId": "WC-005",
+        "startDate": "2026-03-20T08:00:00Z",
+        "endDate": "2026-03-20T12:00:00Z",
+        "durationMinutes": 240,
+        "isMaintenance": true,
+        "dependsOnWorkOrderIds": ["WO-092"]
+      }
+    },
+    {
+      "docId": "WO-094",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-094",
+        "manufacturingOrderId": "MO-018",
+        "workCenterId": "WC-004",
+        "startDate": "2026-03-23T06:00:00Z",
+        "endDate": "2026-03-23T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-093"]
+      }
+    },
+    {
+      "docId": "WO-095",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-095",
+        "manufacturingOrderId": "MO-018",
+        "workCenterId": "WC-003",
+        "startDate": "2026-03-24T08:00:00Z",
+        "endDate": "2026-03-24T16:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-094"]
+      }
+    },
+    {
+      "docId": "WO-096",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-096",
+        "manufacturingOrderId": "MO-019",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-19T06:00:00Z",
+        "endDate": "2026-03-19T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO-097",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-097",
+        "manufacturingOrderId": "MO-019",
+        "workCenterId": "WC-002",
+        "startDate": "2026-03-20T07:00:00Z",
+        "endDate": "2026-03-20T15:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-096"]
+      }
+    },
+    {
+      "docId": "WO-098",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-098",
+        "manufacturingOrderId": "MO-019",
+        "workCenterId": "WC-003",
+        "startDate": "2026-03-23T08:00:00Z",
+        "endDate": "2026-03-23T16:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-097"]
+      }
+    },
+    {
+      "docId": "WO-099",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-099",
+        "manufacturingOrderId": "MO-019",
+        "workCenterId": "WC-004",
+        "startDate": "2026-03-24T06:00:00Z",
+        "endDate": "2026-03-24T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-098"]
+      }
+    },
+    {
+      "docId": "WO-100",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-100",
+        "manufacturingOrderId": "MO-019",
+        "workCenterId": "WC-005",
+        "startDate": "2026-03-25T08:00:00Z",
+        "endDate": "2026-03-25T14:00:00Z",
+        "durationMinutes": 360,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-099"]
+      }
+    },
+    {
+      "docId": "WO-101",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-101",
+        "manufacturingOrderId": "MO-020",
+        "workCenterId": "WC-001",
+        "startDate": "2026-03-23T06:00:00Z",
+        "endDate": "2026-03-23T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO-102",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-102",
+        "manufacturingOrderId": "MO-020",
+        "workCenterId": "WC-004",
+        "startDate": "2026-03-24T06:00:00Z",
+        "endDate": "2026-03-24T14:00:00Z",
+        "durationMinutes": 480,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-101"]
+      }
+    },
+    {
+      "docId": "WO-103",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO-2026-103",
+        "manufacturingOrderId": "MO-020",
+        "workCenterId": "WC-005",
+        "startDate": "2026-03-25T08:00:00Z",
+        "endDate": "2026-03-25T14:00:00Z",
+        "durationMinutes": 360,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO-102"]
+      }
+    }
+  ]
+}
