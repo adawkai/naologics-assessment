@@ -1,0 +1,1002 @@
+[
+  {
+    "work_order_id": "WO-1001",
+    "mo_id": "MO-001",
+    "routing_step": 10,
+    "description": "Material Preparation",
+    "assigned_resource": "Station-A",
+    "status": "Completed",
+    "start_date": "2026-03-01T08:00:00Z",
+    "end_date": "2026-03-01T12:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1002",
+    "mo_id": "MO-001",
+    "routing_step": 20,
+    "description": "CNC Machining",
+    "assigned_resource": "CNC-04",
+    "status": "In Progress",
+    "start_date": "2026-03-02T09:00:00Z",
+    "end_date": "2026-03-03T17:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1003",
+    "mo_id": "MO-001",
+    "routing_step": 30,
+    "description": "Quality Inspection",
+    "assigned_resource": "Lab-1",
+    "status": "Planned",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T10:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1004",
+    "mo_id": "MO-002",
+    "routing_step": 10,
+    "description": "Material Preparation",
+    "assigned_resource": "Station-B",
+    "status": "Completed",
+    "start_date": "2026-03-01T08:00:00Z",
+    "end_date": "2026-03-01T11:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1005",
+    "mo_id": "MO-002",
+    "routing_step": 20,
+    "description": "CNC Machining",
+    "assigned_resource": "CNC-02",
+    "status": "Completed",
+    "start_date": "2026-03-01T13:00:00Z",
+    "end_date": "2026-03-02T15:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1006",
+    "mo_id": "MO-002",
+    "routing_step": 30,
+    "description": "Surface Treatment",
+    "assigned_resource": "Anodize-01",
+    "status": "In Progress",
+    "start_date": "2026-03-04T07:00:00Z",
+    "end_date": "2026-03-04T12:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1007",
+    "mo_id": "MO-003",
+    "routing_step": 10,
+    "description": "Laser Cutting",
+    "assigned_resource": "Laser-X1",
+    "status": "Completed",
+    "start_date": "2026-03-02T08:00:00Z",
+    "end_date": "2026-03-02T10:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1008",
+    "mo_id": "MO-003",
+    "routing_step": 20,
+    "description": "Bending",
+    "assigned_resource": "Press-Brake-02",
+    "status": "Planned",
+    "start_date": "2026-03-05T08:00:00Z",
+    "end_date": "2026-03-05T16:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1009",
+    "mo_id": "MO-004",
+    "routing_step": 10,
+    "description": "Assembly Phase 1",
+    "assigned_resource": "Bench-05",
+    "status": "On Hold",
+    "start_date": "2026-03-03T08:00:00Z",
+    "end_date": "2026-03-03T17:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1010",
+    "mo_id": "MO-004",
+    "routing_step": 20,
+    "description": "Final Testing",
+    "assigned_resource": "Test-Rig-A",
+    "status": "Planned",
+    "start_date": "2026-03-06T09:00:00Z",
+    "end_date": "2026-03-06T11:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1011",
+    "mo_id": "MO-005",
+    "routing_step": 10,
+    "description": "Material Prep",
+    "assigned_resource": "Station-A",
+    "status": "Completed",
+    "start_date": "2026-03-01T08:00:00Z",
+    "end_date": "2026-03-01T12:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1012",
+    "mo_id": "MO-005",
+    "routing_step": 20,
+    "description": "Welding",
+    "assigned_resource": "Weld-Robot-1",
+    "status": "In Progress",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T16:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1013",
+    "mo_id": "MO-006",
+    "routing_step": 10,
+    "description": "Stamping",
+    "assigned_resource": "Press-01",
+    "status": "Completed",
+    "start_date": "2026-02-28T08:00:00Z",
+    "end_date": "2026-02-28T17:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1014",
+    "mo_id": "MO-006",
+    "routing_step": 20,
+    "description": "Deburring",
+    "assigned_resource": "Manual-Finish",
+    "status": "In Progress",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T10:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1015",
+    "mo_id": "MO-007",
+    "routing_step": 10,
+    "description": "Sawing",
+    "assigned_resource": "Saw-01",
+    "status": "Completed",
+    "start_date": "2026-03-01T08:00:00Z",
+    "end_date": "2026-03-01T09:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1016",
+    "mo_id": "MO-007",
+    "routing_step": 20,
+    "description": "Milling",
+    "assigned_resource": "CNC-01",
+    "status": "Planned",
+    "start_date": "2026-03-05T08:00:00Z",
+    "end_date": "2026-03-05T12:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1017",
+    "mo_id": "MO-008",
+    "routing_step": 10,
+    "description": "Casting",
+    "assigned_resource": "Foundry-1",
+    "status": "Completed",
+    "start_date": "2026-02-25T06:00:00Z",
+    "end_date": "2026-02-26T18:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1018",
+    "mo_id": "MO-008",
+    "routing_step": 20,
+    "description": "Rough Grinding",
+    "assigned_resource": "Grinder-03",
+    "status": "Completed",
+    "start_date": "2026-02-27T08:00:00Z",
+    "end_date": "2026-02-27T16:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1019",
+    "mo_id": "MO-008",
+    "routing_step": 30,
+    "description": "Finish Grinding",
+    "assigned_resource": "Grinder-03",
+    "status": "In Progress",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T16:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1020",
+    "mo_id": "MO-009",
+    "routing_step": 10,
+    "description": "Electronics SMT",
+    "assigned_resource": "SMT-Line-1",
+    "status": "Completed",
+    "start_date": "2026-03-02T08:00:00Z",
+    "end_date": "2026-03-02T20:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1021",
+    "mo_id": "MO-009",
+    "routing_step": 20,
+    "description": "Optical Inspection",
+    "assigned_resource": "AOI-01",
+    "status": "Completed",
+    "start_date": "2026-03-03T08:00:00Z",
+    "end_date": "2026-03-03T10:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1022",
+    "mo_id": "MO-009",
+    "routing_step": 30,
+    "description": "Box Build",
+    "assigned_resource": "Bench-12",
+    "status": "Planned",
+    "start_date": "2026-03-05T08:00:00Z",
+    "end_date": "2026-03-05T17:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1023",
+    "mo_id": "MO-010",
+    "routing_step": 10,
+    "description": "Painting",
+    "assigned_resource": "Paint-Booth-2",
+    "status": "In Progress",
+    "start_date": "2026-03-04T06:00:00Z",
+    "end_date": "2026-03-04T18:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1024",
+    "mo_id": "MO-011",
+    "routing_step": 10,
+    "description": "Kitting",
+    "assigned_resource": "Warehouse-K",
+    "status": "Completed",
+    "start_date": "2026-03-03T08:00:00Z",
+    "end_date": "2026-03-03T12:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1025",
+    "mo_id": "MO-011",
+    "routing_step": 20,
+    "description": "Sub-Assembly",
+    "assigned_resource": "Bench-01",
+    "status": "In Progress",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-05T17:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1026",
+    "mo_id": "MO-012",
+    "routing_step": 10,
+    "description": "Forging",
+    "assigned_resource": "Hammer-01",
+    "status": "Completed",
+    "start_date": "2026-02-20T08:00:00Z",
+    "end_date": "2026-02-21T17:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1027",
+    "mo_id": "MO-012",
+    "routing_step": 20,
+    "description": "Heat Treatment",
+    "assigned_resource": "Oven-03",
+    "status": "In Progress",
+    "start_date": "2026-03-03T08:00:00Z",
+    "end_date": "2026-03-05T08:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1028",
+    "mo_id": "MO-013",
+    "routing_step": 10,
+    "description": "Extrusion",
+    "assigned_resource": "Line-B",
+    "status": "Completed",
+    "start_date": "2026-03-01T00:00:00Z",
+    "end_date": "2026-03-01T08:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1029",
+    "mo_id": "MO-013",
+    "routing_step": 20,
+    "description": "Cutting to Length",
+    "assigned_resource": "Saw-02",
+    "status": "Completed",
+    "start_date": "2026-03-01T09:00:00Z",
+    "end_date": "2026-03-01T15:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1030",
+    "mo_id": "MO-013",
+    "routing_step": 30,
+    "description": "Packaging",
+    "assigned_resource": "Pack-01",
+    "status": "Completed",
+    "start_date": "2026-03-02T08:00:00Z",
+    "end_date": "2026-03-02T12:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1031",
+    "mo_id": "MO-014",
+    "routing_step": 10,
+    "description": "Injection Molding",
+    "assigned_resource": "Mold-05",
+    "status": "Completed",
+    "start_date": "2026-03-01T08:00:00Z",
+    "end_date": "2026-03-03T08:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1032",
+    "mo_id": "MO-014",
+    "routing_step": 20,
+    "description": "Trimming",
+    "assigned_resource": "Station-C",
+    "status": "In Progress",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T17:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1033",
+    "mo_id": "MO-015",
+    "routing_step": 10,
+    "description": "PCB Drilling",
+    "assigned_resource": "Drill-01",
+    "status": "Completed",
+    "start_date": "2026-03-02T08:00:00Z",
+    "end_date": "2026-03-02T14:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1034",
+    "mo_id": "MO-015",
+    "routing_step": 20,
+    "description": "Copper Plating",
+    "assigned_resource": "Tank-02",
+    "status": "In Progress",
+    "start_date": "2026-03-03T08:00:00Z",
+    "end_date": "2026-03-04T10:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1035",
+    "mo_id": "MO-016",
+    "routing_step": 10,
+    "description": "3D Printing",
+    "assigned_resource": "SLS-01",
+    "status": "In Progress",
+    "start_date": "2026-03-03T18:00:00Z",
+    "end_date": "2026-03-05T08:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1036",
+    "mo_id": "MO-017",
+    "routing_step": 10,
+    "description": "Fabric Cutting",
+    "assigned_resource": "Cutter-01",
+    "status": "Completed",
+    "start_date": "2026-03-03T08:00:00Z",
+    "end_date": "2026-03-03T12:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1037",
+    "mo_id": "MO-017",
+    "routing_step": 20,
+    "description": "Sewing",
+    "assigned_resource": "Stitch-04",
+    "status": "In Progress",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-05T17:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1038",
+    "mo_id": "MO-018",
+    "routing_step": 10,
+    "description": "Chemical Mixing",
+    "assigned_resource": "Vat-01",
+    "status": "Completed",
+    "start_date": "2026-03-03T08:00:00Z",
+    "end_date": "2026-03-03T11:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1039",
+    "mo_id": "MO-018",
+    "routing_step": 20,
+    "description": "Bottling",
+    "assigned_resource": "Fill-Line-A",
+    "status": "In Progress",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T15:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1040",
+    "mo_id": "MO-018",
+    "routing_step": 30,
+    "description": "Labeling",
+    "assigned_resource": "Labeler-01",
+    "status": "Planned",
+    "start_date": "2026-03-04T16:00:00Z",
+    "end_date": "2026-03-04T18:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1041",
+    "mo_id": "MO-019",
+    "routing_step": 10,
+    "description": "Sandblasting",
+    "assigned_resource": "Blast-01",
+    "status": "Completed",
+    "start_date": "2026-03-03T08:00:00Z",
+    "end_date": "2026-03-03T10:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1042",
+    "mo_id": "MO-019",
+    "routing_step": 20,
+    "description": "Powder Coating",
+    "assigned_resource": "Coating-Line",
+    "status": "In Progress",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T14:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1043",
+    "mo_id": "MO-020",
+    "routing_step": 10,
+    "description": "Wire Stripping",
+    "assigned_resource": "Auto-Strip",
+    "status": "Completed",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T09:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1044",
+    "mo_id": "MO-020",
+    "routing_step": 20,
+    "description": "Crimping",
+    "assigned_resource": "Crimp-01",
+    "status": "In Progress",
+    "start_date": "2026-03-04T10:00:00Z",
+    "end_date": "2026-03-04T17:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1045",
+    "mo_id": "MO-021",
+    "routing_step": 10,
+    "description": "Glass Cutting",
+    "assigned_resource": "Glass-Table",
+    "status": "Completed",
+    "start_date": "2026-03-02T08:00:00Z",
+    "end_date": "2026-03-02T12:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1046",
+    "mo_id": "MO-021",
+    "routing_step": 20,
+    "description": "Edge Polishing",
+    "assigned_resource": "Polisher-02",
+    "status": "Planned",
+    "start_date": "2026-03-05T08:00:00Z",
+    "end_date": "2026-03-05T15:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1047",
+    "mo_id": "MO-022",
+    "routing_step": 10,
+    "description": "Wood Planning",
+    "assigned_resource": "Planer-01",
+    "status": "Completed",
+    "start_date": "2026-03-03T08:00:00Z",
+    "end_date": "2026-03-03T10:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1048",
+    "mo_id": "MO-022",
+    "routing_step": 20,
+    "description": "Jointing",
+    "assigned_resource": "Jointer-01",
+    "status": "In Progress",
+    "start_date": "2026-03-04T13:00:00Z",
+    "end_date": "2026-03-04T17:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1049",
+    "mo_id": "MO-023",
+    "routing_step": 10,
+    "description": "Metal Shearing",
+    "assigned_resource": "Shear-01",
+    "status": "Completed",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T09:30:00Z"
+  },
+  {
+    "work_order_id": "WO-1050",
+    "mo_id": "MO-023",
+    "routing_step": 20,
+    "description": "Folding",
+    "assigned_resource": "Folder-02",
+    "status": "Planned",
+    "start_date": "2026-03-05T08:00:00Z",
+    "end_date": "2026-03-05T12:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1051",
+    "mo_id": "MO-024",
+    "routing_step": 10,
+    "description": "Drying",
+    "assigned_resource": "Kiln-01",
+    "status": "In Progress",
+    "start_date": "2026-03-03T08:00:00Z",
+    "end_date": "2026-03-05T08:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1052",
+    "mo_id": "MO-025",
+    "routing_step": 10,
+    "description": "Turning",
+    "assigned_resource": "Lathe-01",
+    "status": "Completed",
+    "start_date": "2026-03-02T08:00:00Z",
+    "end_date": "2026-03-02T17:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1053",
+    "mo_id": "MO-025",
+    "routing_step": 20,
+    "description": "Threading",
+    "assigned_resource": "Lathe-01",
+    "status": "In Progress",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T12:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1054",
+    "mo_id": "MO-026",
+    "routing_step": 10,
+    "description": "Vacuum Forming",
+    "assigned_resource": "Vac-03",
+    "status": "Completed",
+    "start_date": "2026-03-03T08:00:00Z",
+    "end_date": "2026-03-03T15:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1055",
+    "mo_id": "MO-027",
+    "routing_step": 10,
+    "description": "Component Sorting",
+    "assigned_resource": "Manual-01",
+    "status": "Completed",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T10:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1056",
+    "mo_id": "MO-028",
+    "routing_step": 10,
+    "description": "Surface Prep",
+    "assigned_resource": "Station-B",
+    "status": "In Progress",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T12:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1057",
+    "mo_id": "MO-029",
+    "routing_step": 10,
+    "description": "Knitting",
+    "assigned_resource": "Knit-01",
+    "status": "Completed",
+    "start_date": "2026-03-01T08:00:00Z",
+    "end_date": "2026-03-03T08:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1058",
+    "mo_id": "MO-029",
+    "routing_step": 20,
+    "description": "Steam Pressing",
+    "assigned_resource": "Press-04",
+    "status": "Planned",
+    "start_date": "2026-03-05T08:00:00Z",
+    "end_date": "2026-03-05T12:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1059",
+    "mo_id": "MO-030",
+    "routing_step": 10,
+    "description": "Rubber Compounding",
+    "assigned_resource": "Mixer-01",
+    "status": "Completed",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T11:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1060",
+    "mo_id": "MO-030",
+    "routing_step": 20,
+    "description": "Vulcanizing",
+    "assigned_resource": "Press-V1",
+    "status": "Planned",
+    "start_date": "2026-03-05T08:00:00Z",
+    "end_date": "2026-03-05T17:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1061",
+    "mo_id": "MO-031",
+    "routing_step": 10,
+    "description": "Wire Drawing",
+    "assigned_resource": "Draw-01",
+    "status": "Completed",
+    "start_date": "2026-03-02T08:00:00Z",
+    "end_date": "2026-03-02T17:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1062",
+    "mo_id": "MO-032",
+    "routing_step": 10,
+    "description": "Grinding",
+    "assigned_resource": "Grinder-01",
+    "status": "In Progress",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T16:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1063",
+    "mo_id": "MO-033",
+    "routing_step": 10,
+    "description": "Polishing",
+    "assigned_resource": "Manual-02",
+    "status": "Planned",
+    "start_date": "2026-03-05T08:00:00Z",
+    "end_date": "2026-03-05T12:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1064",
+    "mo_id": "MO-034",
+    "routing_step": 10,
+    "description": "Degreasing",
+    "assigned_resource": "Tank-01",
+    "status": "Completed",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T09:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1065",
+    "mo_id": "MO-034",
+    "routing_step": 20,
+    "description": "Plating",
+    "assigned_resource": "Tank-02",
+    "status": "Planned",
+    "start_date": "2026-03-06T08:00:00Z",
+    "end_date": "2026-03-06T12:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1066",
+    "mo_id": "MO-035",
+    "routing_step": 10,
+    "description": "Braiding",
+    "assigned_resource": "Braid-01",
+    "status": "In Progress",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T17:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1067",
+    "mo_id": "MO-036",
+    "routing_step": 10,
+    "description": "Etching",
+    "assigned_resource": "Etch-01",
+    "status": "Completed",
+    "start_date": "2026-03-03T08:00:00Z",
+    "end_date": "2026-03-03T11:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1068",
+    "mo_id": "MO-037",
+    "routing_step": 10,
+    "description": "Laminating",
+    "assigned_resource": "Lam-01",
+    "status": "Completed",
+    "start_date": "2026-03-02T08:00:00Z",
+    "end_date": "2026-03-02T15:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1069",
+    "mo_id": "MO-038",
+    "routing_step": 10,
+    "description": "Riveting",
+    "assigned_resource": "Station-D",
+    "status": "In Progress",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T12:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1070",
+    "mo_id": "MO-039",
+    "routing_step": 10,
+    "description": "Soldering",
+    "assigned_resource": "Bench-08",
+    "status": "Completed",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T11:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1071",
+    "mo_id": "MO-040",
+    "routing_step": 10,
+    "description": "Honing",
+    "assigned_resource": "Hone-01",
+    "status": "Planned",
+    "start_date": "2026-03-06T08:00:00Z",
+    "end_date": "2026-03-06T10:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1072",
+    "mo_id": "MO-041",
+    "routing_step": 10,
+    "description": "Lapping",
+    "assigned_resource": "Lap-01",
+    "status": "In Progress",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T15:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1073",
+    "mo_id": "MO-042",
+    "routing_step": 10,
+    "description": "Annealing",
+    "assigned_resource": "Oven-01",
+    "status": "Completed",
+    "start_date": "2026-03-01T08:00:00Z",
+    "end_date": "2026-03-02T08:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1074",
+    "mo_id": "MO-043",
+    "routing_step": 10,
+    "description": "Tapping",
+    "assigned_resource": "Station-E",
+    "status": "Completed",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T10:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1075",
+    "mo_id": "MO-044",
+    "routing_step": 10,
+    "description": "Punching",
+    "assigned_resource": "Press-05",
+    "status": "In Progress",
+    "start_date": "2026-03-04T13:00:00Z",
+    "end_date": "2026-03-04T17:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1076",
+    "mo_id": "MO-045",
+    "routing_step": 10,
+    "description": "Broaching",
+    "assigned_resource": "Broach-01",
+    "status": "Planned",
+    "start_date": "2026-03-07T08:00:00Z",
+    "end_date": "2026-03-07T12:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1077",
+    "mo_id": "MO-046",
+    "routing_step": 10,
+    "description": "Sanding",
+    "assigned_resource": "Sander-01",
+    "status": "Completed",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T12:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1078",
+    "mo_id": "MO-047",
+    "routing_step": 10,
+    "description": "Varnishing",
+    "assigned_resource": "Booth-03",
+    "status": "Planned",
+    "start_date": "2026-03-05T08:00:00Z",
+    "end_date": "2026-03-05T17:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1079",
+    "mo_id": "MO-048",
+    "routing_step": 10,
+    "description": "Chamfering",
+    "assigned_resource": "Station-F",
+    "status": "Completed",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T09:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1080",
+    "mo_id": "MO-049",
+    "routing_step": 10,
+    "description": "Reaming",
+    "assigned_resource": "Station-G",
+    "status": "In Progress",
+    "start_date": "2026-03-04T10:00:00Z",
+    "end_date": "2026-03-04T12:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1081",
+    "mo_id": "MO-050",
+    "routing_step": 10,
+    "description": "Final Audit",
+    "assigned_resource": "QC-Desk",
+    "status": "Planned",
+    "start_date": "2026-03-05T08:00:00Z",
+    "end_date": "2026-03-05T09:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1082",
+    "mo_id": "MO-051",
+    "routing_step": 10,
+    "description": "Material Prep",
+    "assigned_resource": "Station-A",
+    "status": "Completed",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T10:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1083",
+    "mo_id": "MO-052",
+    "routing_step": 10,
+    "description": "Cutting",
+    "assigned_resource": "Saw-01",
+    "status": "Completed",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T09:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1084",
+    "mo_id": "MO-053",
+    "routing_step": 10,
+    "description": "Drilling",
+    "assigned_resource": "Drill-02",
+    "status": "In Progress",
+    "start_date": "2026-03-04T14:00:00Z",
+    "end_date": "2026-03-04T16:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1085",
+    "mo_id": "MO-054",
+    "routing_step": 10,
+    "description": "Milling",
+    "assigned_resource": "CNC-03",
+    "status": "Planned",
+    "start_date": "2026-03-05T08:00:00Z",
+    "end_date": "2026-03-05T12:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1086",
+    "mo_id": "MO-055",
+    "routing_step": 10,
+    "description": "Grinding",
+    "assigned_resource": "Grinder-02",
+    "status": "Completed",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T10:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1087",
+    "mo_id": "MO-056",
+    "routing_step": 10,
+    "description": "Inspection",
+    "assigned_resource": "Lab-2",
+    "status": "Planned",
+    "start_date": "2026-03-06T08:00:00Z",
+    "end_date": "2026-03-06T09:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1088",
+    "mo_id": "MO-057",
+    "routing_step": 10,
+    "description": "Packaging",
+    "assigned_resource": "Pack-02",
+    "status": "Planned",
+    "start_date": "2026-03-06T10:00:00Z",
+    "end_date": "2026-03-06T12:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1089",
+    "mo_id": "MO-058",
+    "routing_step": 10,
+    "description": "Sorting",
+    "assigned_resource": "Station-H",
+    "status": "Completed",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T10:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1090",
+    "mo_id": "MO-059",
+    "routing_step": 10,
+    "description": "Cleaning",
+    "assigned_resource": "Wash-Line",
+    "status": "In Progress",
+    "start_date": "2026-03-04T15:00:00Z",
+    "end_date": "2026-03-04T17:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1091",
+    "mo_id": "MO-060",
+    "routing_step": 10,
+    "description": "Kitting",
+    "assigned_resource": "Warehouse",
+    "status": "Planned",
+    "start_date": "2026-03-05T08:00:00Z",
+    "end_date": "2026-03-05T10:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1092",
+    "mo_id": "MO-061",
+    "routing_step": 10,
+    "description": "Assembly",
+    "assigned_resource": "Bench-09",
+    "status": "Planned",
+    "start_date": "2026-03-05T11:00:00Z",
+    "end_date": "2026-03-05T15:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1093",
+    "mo_id": "MO-062",
+    "routing_step": 10,
+    "description": "Testing",
+    "assigned_resource": "Test-Bench",
+    "status": "Planned",
+    "start_date": "2026-03-06T08:00:00Z",
+    "end_date": "2026-03-06T12:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1094",
+    "mo_id": "MO-063",
+    "routing_step": 10,
+    "description": "Wrapping",
+    "assigned_resource": "Station-I",
+    "status": "Completed",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T09:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1095",
+    "mo_id": "MO-064",
+    "routing_step": 10,
+    "description": "Labeling",
+    "assigned_resource": "Station-J",
+    "status": "Completed",
+    "start_date": "2026-03-04T10:00:00Z",
+    "end_date": "2026-03-04T11:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1096",
+    "mo_id": "MO-065",
+    "routing_step": 10,
+    "description": "Loading",
+    "assigned_resource": "Dock-1",
+    "status": "Planned",
+    "start_date": "2026-03-07T08:00:00Z",
+    "end_date": "2026-03-07T10:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1097",
+    "mo_id": "MO-066",
+    "routing_step": 10,
+    "description": "Staging",
+    "assigned_resource": "Dock-2",
+    "status": "In Progress",
+    "start_date": "2026-03-04T16:00:00Z",
+    "end_date": "2026-03-04T18:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1098",
+    "mo_id": "MO-067",
+    "routing_step": 10,
+    "description": "Polishing",
+    "assigned_resource": "Manual-03",
+    "status": "Planned",
+    "start_date": "2026-03-06T08:00:00Z",
+    "end_date": "2026-03-06T12:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1099",
+    "mo_id": "MO-068",
+    "routing_step": 10,
+    "description": "Deburring",
+    "assigned_resource": "Manual-04",
+    "status": "Completed",
+    "start_date": "2026-03-04T08:00:00Z",
+    "end_date": "2026-03-04T10:00:00Z"
+  },
+  {
+    "work_order_id": "WO-1100",
+    "mo_id": "MO-069",
+    "routing_step": 10,
+    "description": "Final Wrap",
+    "assigned_resource": "Station-K",
+    "status": "Planned",
+    "start_date": "2026-03-07T08:00:00Z",
+    "end_date": "2026-03-07T09:00:00Z"
+  }
+]
