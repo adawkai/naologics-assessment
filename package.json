@@ -6,6 +6,7 @@
     "start": "ts-node main.ts"
   },
   "devDependencies": {
+    "@types/luxon": "^3.7.1",
     "@types/node": "^25.3.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"

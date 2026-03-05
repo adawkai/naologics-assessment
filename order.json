@@ -730,7 +730,7 @@
         "startDate": "2026-03-12T15:00:00Z",
         "endDate": "2026-03-12T19:00:00Z",
         "durationMinutes": 240,
-        "isMaintenance": true,
+        "isMaintenance": false,
         "dependsOnWorkOrderIds": ["WO-013", "WO-014"]
       }
     },
@@ -954,7 +954,7 @@
         "startDate": "2026-03-08T22:00:00Z",
         "endDate": "2026-03-09T04:00:00Z",
         "durationMinutes": 360,
-        "isMaintenance": true,
+        "isMaintenance": false,
         "dependsOnWorkOrderIds": ["WO-030"]
       }
     },
@@ -1234,7 +1234,7 @@
         "startDate": "2026-03-10T22:00:00Z",
         "endDate": "2026-03-11T06:00:00Z",
         "durationMinutes": 480,
-        "isMaintenance": true,
+        "isMaintenance": false,
         "dependsOnWorkOrderIds": ["WO-050"]
       }
     },
@@ -1472,7 +1472,7 @@
         "startDate": "2026-03-19T07:00:00Z",
         "endDate": "2026-03-19T11:00:00Z",
         "durationMinutes": 240,
-        "isMaintenance": true,
+        "isMaintenance": false,
         "dependsOnWorkOrderIds": ["WO-066", "WO-067"]
       }
     },
@@ -1612,7 +1612,7 @@
         "startDate": "2026-03-14T16:00:00Z",
         "endDate": "2026-03-15T00:00:00Z",
         "durationMinutes": 480,
-        "isMaintenance": true,
+        "isMaintenance": false,
         "dependsOnWorkOrderIds": ["WO-077"]
       }
     },
@@ -1822,7 +1822,7 @@
         "startDate": "2026-03-20T08:00:00Z",
         "endDate": "2026-03-20T12:00:00Z",
         "durationMinutes": 240,
-        "isMaintenance": true,
+        "isMaintenance": false,
         "dependsOnWorkOrderIds": ["WO-092"]
       }
     },

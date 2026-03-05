@@ -49,3 +49,37 @@ export type WorkOrder = {
     dependsOnWorkOrderIds: string[]; // All must complete before this starts
   };
 };
+
+export type ScheduleChange = {
+  workOrderId: string;
+  changeType: "unchanged" | "rescheduled";
+  before: {
+    workCenterId: string;
+    startDate: string;
+    endDate: string;
+  };
+  after: {
+    workCenterId: string;
+    startDate: string;
+    endDate: string;
+  };
+  movedStartByMinutes: number;
+  movedEndByMinutes: number;
+};
+
+export type ScheduleExplanation = {
+  workOrderId: string;
+  rule:
+    | "fixed_maintenance"
+    | "dependency_gate"
+    | "machine_conflict"
+    | "shift_boundary"
+    | "maintenance_window";
+  message: string;
+};
+
+export type ReflowResult = {
+  workOrders: WorkOrder[];
+  changes: ScheduleChange[];
+  explanations: ScheduleExplanation[];
+};

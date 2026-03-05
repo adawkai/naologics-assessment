@@ -1,0 +1,1927 @@
+[
+  {
+    "docId": "WO-001",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-001",
+      "manufacturingOrderId": "MO-001",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-04T06:00:00.000Z",
+      "endDate": "2026-03-04T14:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-002",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-002",
+      "manufacturingOrderId": "MO-001",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-04T14:00:00.000Z",
+      "endDate": "2026-03-04T22:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-001"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-003",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-003",
+      "manufacturingOrderId": "MO-001",
+      "workCenterId": "WC-002",
+      "startDate": "2026-03-05T07:00:00.000Z",
+      "endDate": "2026-03-05T15:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-001",
+        "WO-002"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-004",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-004",
+      "manufacturingOrderId": "MO-001",
+      "workCenterId": "WC-003",
+      "startDate": "2026-03-06T08:00:00.000Z",
+      "endDate": "2026-03-06T16:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-003"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-005",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-005",
+      "manufacturingOrderId": "MO-001",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-09T06:00:00.000Z",
+      "endDate": "2026-03-09T14:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-004"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-006",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-006",
+      "manufacturingOrderId": "MO-001",
+      "workCenterId": "WC-005",
+      "startDate": "2026-03-10T08:00:00.000Z",
+      "endDate": "2026-03-10T14:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-005"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-007",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-007",
+      "manufacturingOrderId": "MO-002",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-04T22:00:00.000Z",
+      "endDate": "2026-03-05T04:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-04T14:00:00.000Z due to machine conflict. | Moved start to 2026-03-04T22:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-008",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-008",
+      "manufacturingOrderId": "MO-002",
+      "workCenterId": "WC-002",
+      "startDate": "2026-03-05T15:00:00.000Z",
+      "endDate": "2026-03-05T23:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-007"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-05T15:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-009",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-009",
+      "manufacturingOrderId": "MO-002",
+      "workCenterId": "WC-002",
+      "startDate": "2026-03-06T07:00:00.000Z",
+      "endDate": "2026-03-06T11:00:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-008"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Start moved to 2026-03-05T23:00:00.000Z after parent dependencies completed."
+  },
+  {
+    "docId": "WO-010",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-010",
+      "manufacturingOrderId": "MO-002",
+      "workCenterId": "WC-003",
+      "startDate": "2026-03-06T16:00:00.000Z",
+      "endDate": "2026-03-06T22:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-008",
+        "WO-009"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Start moved to 2026-03-06T11:00:00.000Z after parent dependencies completed. | Moved start to 2026-03-06T16:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-011",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-011",
+      "manufacturingOrderId": "MO-002",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-09T14:00:00.000Z",
+      "endDate": "2026-03-09T22:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-010"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-012",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-012",
+      "manufacturingOrderId": "MO-002",
+      "workCenterId": "WC-005",
+      "startDate": "2026-03-10T14:00:00.000Z",
+      "endDate": "2026-03-10T23:00:00.000Z",
+      "durationMinutes": 540,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-011"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-10T14:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-013",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-013",
+      "manufacturingOrderId": "MO-003",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-09T06:00:00.000Z",
+      "endDate": "2026-03-09T14:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-014",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-014",
+      "manufacturingOrderId": "MO-003",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-09T14:00:00.000Z",
+      "endDate": "2026-03-09T22:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-013"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-015",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-015",
+      "manufacturingOrderId": "MO-003",
+      "workCenterId": "WC-002",
+      "startDate": "2026-03-12T19:00:00.000Z",
+      "endDate": "2026-03-12T23:00:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-013",
+        "WO-014"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-12T19:00:00.000Z due to maintenance window."
+  },
+  {
+    "docId": "WO-016",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-016",
+      "manufacturingOrderId": "MO-003",
+      "workCenterId": "WC-003",
+      "startDate": "2026-03-13T08:00:00.000Z",
+      "endDate": "2026-03-13T16:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-015"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-017",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-017",
+      "manufacturingOrderId": "MO-003",
+      "workCenterId": "WC-005",
+      "startDate": "2026-03-16T08:00:00.000Z",
+      "endDate": "2026-03-16T14:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-016"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-018",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-018",
+      "manufacturingOrderId": "MO-004",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-05T04:00:00.000Z",
+      "endDate": "2026-03-05T12:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-04T14:00:00.000Z due to machine conflict. | Moved start to 2026-03-04T22:00:00.000Z due to machine conflict. | Moved start to 2026-03-05T04:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-019",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-019",
+      "manufacturingOrderId": "MO-004",
+      "workCenterId": "WC-002",
+      "startDate": "2026-03-05T23:00:00.000Z",
+      "endDate": "2026-03-06T05:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-018"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Start moved to 2026-03-05T12:00:00.000Z after parent dependencies completed. | Moved start to 2026-03-05T15:00:00.000Z due to machine conflict. | Moved start to 2026-03-05T23:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-020",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-020",
+      "manufacturingOrderId": "MO-004",
+      "workCenterId": "WC-003",
+      "startDate": "2026-03-06T22:00:00.000Z",
+      "endDate": "2026-03-07T02:00:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-019"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-06T16:00:00.000Z due to machine conflict. | Moved start to 2026-03-06T22:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-021",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-021",
+      "manufacturingOrderId": "MO-004",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-09T22:00:00.000Z",
+      "endDate": "2026-03-10T06:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-020"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-09T14:00:00.000Z due to machine conflict. | Moved start to 2026-03-09T22:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-022",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-022",
+      "manufacturingOrderId": "MO-004",
+      "workCenterId": "WC-005",
+      "startDate": "2026-03-10T23:00:00.000Z",
+      "endDate": "2026-03-11T04:00:00.000Z",
+      "durationMinutes": 300,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-021"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-10T14:00:00.000Z due to machine conflict. | Moved start to 2026-03-10T23:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-023",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-023",
+      "manufacturingOrderId": "MO-005",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-11T06:00:00.000Z",
+      "endDate": "2026-03-11T14:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-024",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-024",
+      "manufacturingOrderId": "MO-005",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-12T14:00:00.000Z",
+      "endDate": "2026-03-12T22:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-023"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Split due to shift boundary gap 2026-03-12T22:00:00.000Z - 2026-03-12T22:00:00.000Z."
+  },
+  {
+    "docId": "WO-024-separated_1",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-024",
+      "manufacturingOrderId": "MO-005",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-12T22:00:00.000Z",
+      "endDate": "2026-03-13T04:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-024"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-025",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-025",
+      "manufacturingOrderId": "MO-005",
+      "workCenterId": "WC-002",
+      "startDate": "2026-03-13T07:00:00.000Z",
+      "endDate": "2026-03-13T13:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-024-separated_1"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-026",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-026",
+      "manufacturingOrderId": "MO-005",
+      "workCenterId": "WC-003",
+      "startDate": "2026-03-16T08:00:00.000Z",
+      "endDate": "2026-03-16T14:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-025"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-027",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-027",
+      "manufacturingOrderId": "MO-005",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-17T06:00:00.000Z",
+      "endDate": "2026-03-17T14:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-026"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-028",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-028",
+      "manufacturingOrderId": "MO-005",
+      "workCenterId": "WC-005",
+      "startDate": "2026-03-18T08:00:00.000Z",
+      "endDate": "2026-03-18T17:00:00.000Z",
+      "durationMinutes": 540,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-027"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-029",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-029",
+      "manufacturingOrderId": "MO-006",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-05T12:00:00.000Z",
+      "endDate": "2026-03-05T14:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-05T12:00:00.000Z due to machine conflict. | Split due to shift boundary gap 2026-03-05T14:00:00.000Z - 2026-03-05T14:00:00.000Z."
+  },
+  {
+    "docId": "WO-029-separated_1",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-029",
+      "manufacturingOrderId": "MO-006",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-05T14:00:00.000Z",
+      "endDate": "2026-03-05T20:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-029"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-030",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-030",
+      "manufacturingOrderId": "MO-006",
+      "workCenterId": "WC-002",
+      "startDate": "2026-03-06T11:00:00.000Z",
+      "endDate": "2026-03-06T15:00:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-029-separated_1"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-06T11:00:00.000Z due to machine conflict. | Split due to shift boundary gap 2026-03-06T15:00:00.000Z - 2026-03-06T15:00:00.000Z."
+  },
+  {
+    "docId": "WO-030-separated_1",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-030",
+      "manufacturingOrderId": "MO-006",
+      "workCenterId": "WC-002",
+      "startDate": "2026-03-06T15:00:00.000Z",
+      "endDate": "2026-03-06T19:00:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-030"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-031",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-031",
+      "manufacturingOrderId": "MO-006",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-10T06:00:00.000Z",
+      "endDate": "2026-03-10T12:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-030-separated_1"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-09T14:00:00.000Z due to machine conflict. | Moved start to 2026-03-09T22:00:00.000Z due to machine conflict. | Moved start to 2026-03-10T06:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-032",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-032",
+      "manufacturingOrderId": "MO-006",
+      "workCenterId": "WC-003",
+      "startDate": "2026-03-10T12:00:00.000Z",
+      "endDate": "2026-03-10T18:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-031"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Start moved to 2026-03-10T12:00:00.000Z after parent dependencies completed."
+  },
+  {
+    "docId": "WO-033",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-033",
+      "manufacturingOrderId": "MO-006",
+      "workCenterId": "WC-005",
+      "startDate": "2026-03-11T08:00:00.000Z",
+      "endDate": "2026-03-11T13:00:00.000Z",
+      "durationMinutes": 300,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-032"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Start moved to 2026-03-10T18:00:00.000Z after parent dependencies completed."
+  },
+  {
+    "docId": "WO-034",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-034",
+      "manufacturingOrderId": "MO-007",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-10T06:00:00.000Z",
+      "endDate": "2026-03-10T14:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-035",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-035",
+      "manufacturingOrderId": "MO-007",
+      "workCenterId": "WC-002",
+      "startDate": "2026-03-11T07:00:00.000Z",
+      "endDate": "2026-03-11T15:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-034"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-036",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-036",
+      "manufacturingOrderId": "MO-007",
+      "workCenterId": "WC-003",
+      "startDate": "2026-03-12T08:00:00.000Z",
+      "endDate": "2026-03-12T14:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-035"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-037",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-037",
+      "manufacturingOrderId": "MO-007",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-13T06:00:00.000Z",
+      "endDate": "2026-03-13T14:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-036"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-038",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-038",
+      "manufacturingOrderId": "MO-007",
+      "workCenterId": "WC-005",
+      "startDate": "2026-03-16T14:00:00.000Z",
+      "endDate": "2026-03-16T20:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-037"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-16T14:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-039",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-039",
+      "manufacturingOrderId": "MO-008",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-05T20:00:00.000Z",
+      "endDate": "2026-03-06T02:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-04T14:00:00.000Z due to machine conflict. | Moved start to 2026-03-04T22:00:00.000Z due to machine conflict. | Moved start to 2026-03-05T04:00:00.000Z due to machine conflict. | Moved start to 2026-03-05T12:00:00.000Z due to machine conflict. | Moved start to 2026-03-05T14:00:00.000Z due to machine conflict. | Moved start to 2026-03-05T20:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-040",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-040",
+      "manufacturingOrderId": "MO-008",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-06T06:00:00.000Z",
+      "endDate": "2026-03-06T14:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-039"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Start moved to 2026-03-06T02:00:00.000Z after parent dependencies completed. | Split due to shift boundary gap 2026-03-06T14:00:00.000Z - 2026-03-06T14:00:00.000Z."
+  },
+  {
+    "docId": "WO-040-separated_1",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-040",
+      "manufacturingOrderId": "MO-008",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-06T14:00:00.000Z",
+      "endDate": "2026-03-06T16:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-040"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-041",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-041",
+      "manufacturingOrderId": "MO-008",
+      "workCenterId": "WC-002",
+      "startDate": "2026-03-06T19:00:00.000Z",
+      "endDate": "2026-03-07T03:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-040-separated_1"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Start moved to 2026-03-06T16:00:00.000Z after parent dependencies completed. | Moved start to 2026-03-06T19:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-042",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-042",
+      "manufacturingOrderId": "MO-008",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-10T12:00:00.000Z",
+      "endDate": "2026-03-10T14:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-041"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-09T14:00:00.000Z due to machine conflict. | Moved start to 2026-03-09T22:00:00.000Z due to machine conflict. | Moved start to 2026-03-10T06:00:00.000Z due to machine conflict. | Moved start to 2026-03-10T12:00:00.000Z due to machine conflict. | Split due to shift boundary gap 2026-03-10T14:00:00.000Z - 2026-03-10T14:00:00.000Z."
+  },
+  {
+    "docId": "WO-042-separated_1",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-042",
+      "manufacturingOrderId": "MO-008",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-10T14:00:00.000Z",
+      "endDate": "2026-03-10T20:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-042"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-043",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-043",
+      "manufacturingOrderId": "MO-008",
+      "workCenterId": "WC-005",
+      "startDate": "2026-03-11T13:00:00.000Z",
+      "endDate": "2026-03-11T19:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-042-separated_1"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Start moved to 2026-03-10T20:00:00.000Z after parent dependencies completed. | Moved start to 2026-03-11T13:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-044",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-044",
+      "manufacturingOrderId": "MO-009",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-09T22:00:00.000Z",
+      "endDate": "2026-03-10T06:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-09T14:00:00.000Z due to machine conflict. | Moved start to 2026-03-09T22:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-045",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-045",
+      "manufacturingOrderId": "MO-009",
+      "workCenterId": "WC-002",
+      "startDate": "2026-03-10T07:00:00.000Z",
+      "endDate": "2026-03-10T13:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-044"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-046",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-046",
+      "manufacturingOrderId": "MO-009",
+      "workCenterId": "WC-003",
+      "startDate": "2026-03-10T08:00:00.000Z",
+      "endDate": "2026-03-10T12:00:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-044"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-047",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-047",
+      "manufacturingOrderId": "MO-009",
+      "workCenterId": "WC-002",
+      "startDate": "2026-03-11T15:00:00.000Z",
+      "endDate": "2026-03-11T21:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-045"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-11T15:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-048",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-048",
+      "manufacturingOrderId": "MO-009",
+      "workCenterId": "WC-003",
+      "startDate": "2026-03-11T08:00:00.000Z",
+      "endDate": "2026-03-11T14:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-046"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-049",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-049",
+      "manufacturingOrderId": "MO-009",
+      "workCenterId": "WC-005",
+      "startDate": "2026-03-12T08:00:00.000Z",
+      "endDate": "2026-03-12T14:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-047",
+        "WO-048"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-050",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-050",
+      "manufacturingOrderId": "MO-010",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-10T14:00:00.000Z",
+      "endDate": "2026-03-10T22:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-10T14:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-051",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-051",
+      "manufacturingOrderId": "MO-010",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-11T14:00:00.000Z",
+      "endDate": "2026-03-11T22:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-050"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-11T14:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-052",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-052",
+      "manufacturingOrderId": "MO-010",
+      "workCenterId": "WC-002",
+      "startDate": "2026-03-11T22:00:00.000Z",
+      "endDate": "2026-03-12T06:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-051"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Start moved to 2026-03-11T22:00:00.000Z after parent dependencies completed."
+  },
+  {
+    "docId": "WO-053",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-053",
+      "manufacturingOrderId": "MO-010",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-12T06:00:00.000Z",
+      "endDate": "2026-03-12T14:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-052"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-054",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-054",
+      "manufacturingOrderId": "MO-010",
+      "workCenterId": "WC-005",
+      "startDate": "2026-03-13T08:00:00.000Z",
+      "endDate": "2026-03-13T13:00:00.000Z",
+      "durationMinutes": 300,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-053"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-055",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-055",
+      "manufacturingOrderId": "MO-011",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-11T22:00:00.000Z",
+      "endDate": "2026-03-12T06:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-11T14:00:00.000Z due to machine conflict. | Moved start to 2026-03-11T22:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-056",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-056",
+      "manufacturingOrderId": "MO-011",
+      "workCenterId": "WC-002",
+      "startDate": "2026-03-12T23:00:00.000Z",
+      "endDate": "2026-03-13T07:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-055"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-12T23:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-057",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-057",
+      "manufacturingOrderId": "MO-011",
+      "workCenterId": "WC-003",
+      "startDate": "2026-03-13T16:00:00.000Z",
+      "endDate": "2026-03-14T00:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-056"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-13T16:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-058",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-058",
+      "manufacturingOrderId": "MO-011",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-16T06:00:00.000Z",
+      "endDate": "2026-03-16T14:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-057"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-059",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-059",
+      "manufacturingOrderId": "MO-011",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-16T14:00:00.000Z",
+      "endDate": "2026-03-16T22:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-058"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-060",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-060",
+      "manufacturingOrderId": "MO-011",
+      "workCenterId": "WC-005",
+      "startDate": "2026-03-17T08:00:00.000Z",
+      "endDate": "2026-03-17T17:00:00.000Z",
+      "durationMinutes": 540,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-059"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-061",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-061",
+      "manufacturingOrderId": "MO-012",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-06T16:00:00.000Z",
+      "endDate": "2026-03-07T00:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-04T22:00:00.000Z due to machine conflict. | Moved start to 2026-03-05T04:00:00.000Z due to machine conflict. | Moved start to 2026-03-05T12:00:00.000Z due to machine conflict. | Moved start to 2026-03-05T14:00:00.000Z due to machine conflict. | Moved start to 2026-03-05T20:00:00.000Z due to machine conflict. | Moved start to 2026-03-06T02:00:00.000Z due to machine conflict. | Moved start to 2026-03-06T14:00:00.000Z due to machine conflict. | Moved start to 2026-03-06T16:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-062",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-062",
+      "manufacturingOrderId": "MO-012",
+      "workCenterId": "WC-002",
+      "startDate": "2026-03-09T07:00:00.000Z",
+      "endDate": "2026-03-09T15:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-061"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Start moved to 2026-03-07T00:00:00.000Z after parent dependencies completed."
+  },
+  {
+    "docId": "WO-063",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-063",
+      "manufacturingOrderId": "MO-012",
+      "workCenterId": "WC-003",
+      "startDate": "2026-03-09T15:00:00.000Z",
+      "endDate": "2026-03-09T19:00:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-062"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Start moved to 2026-03-09T15:00:00.000Z after parent dependencies completed."
+  },
+  {
+    "docId": "WO-064",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-064",
+      "manufacturingOrderId": "MO-012",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-10T20:00:00.000Z",
+      "endDate": "2026-03-10T22:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-063"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Start moved to 2026-03-09T19:00:00.000Z after parent dependencies completed. | Moved start to 2026-03-09T22:00:00.000Z due to machine conflict. | Moved start to 2026-03-10T06:00:00.000Z due to machine conflict. | Moved start to 2026-03-10T12:00:00.000Z due to machine conflict. | Moved start to 2026-03-10T14:00:00.000Z due to machine conflict. | Moved start to 2026-03-10T20:00:00.000Z due to machine conflict. | Split due to shift boundary gap 2026-03-10T22:00:00.000Z - 2026-03-10T22:00:00.000Z."
+  },
+  {
+    "docId": "WO-064-separated_1",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-064",
+      "manufacturingOrderId": "MO-012",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-10T22:00:00.000Z",
+      "endDate": "2026-03-11T04:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-064"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-065",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-065",
+      "manufacturingOrderId": "MO-012",
+      "workCenterId": "WC-005",
+      "startDate": "2026-03-11T19:00:00.000Z",
+      "endDate": "2026-03-12T04:00:00.000Z",
+      "durationMinutes": 540,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-064-separated_1"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Start moved to 2026-03-11T04:00:00.000Z after parent dependencies completed. | Moved start to 2026-03-11T13:00:00.000Z due to machine conflict. | Moved start to 2026-03-11T19:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-066",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-066",
+      "manufacturingOrderId": "MO-013",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-17T06:00:00.000Z",
+      "endDate": "2026-03-17T14:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-067",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-067",
+      "manufacturingOrderId": "MO-013",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-17T14:00:00.000Z",
+      "endDate": "2026-03-17T22:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-066"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-068",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-068",
+      "manufacturingOrderId": "MO-013",
+      "workCenterId": "WC-002",
+      "startDate": "2026-03-19T11:00:00.000Z",
+      "endDate": "2026-03-19T15:00:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-066",
+        "WO-067"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-19T11:00:00.000Z due to maintenance window."
+  },
+  {
+    "docId": "WO-069",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-069",
+      "manufacturingOrderId": "MO-013",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-20T06:00:00.000Z",
+      "endDate": "2026-03-20T14:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-068"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-070",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-070",
+      "manufacturingOrderId": "MO-013",
+      "workCenterId": "WC-005",
+      "startDate": "2026-03-23T08:00:00.000Z",
+      "endDate": "2026-03-23T14:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-069"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-071",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-071",
+      "manufacturingOrderId": "MO-014",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-16T06:00:00.000Z",
+      "endDate": "2026-03-16T14:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-072",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-072",
+      "manufacturingOrderId": "MO-014",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-17T14:00:00.000Z",
+      "endDate": "2026-03-17T22:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-071"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Split due to shift boundary gap 2026-03-17T22:00:00.000Z - 2026-03-17T22:00:00.000Z."
+  },
+  {
+    "docId": "WO-072-separated_1",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-072",
+      "manufacturingOrderId": "MO-014",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-17T22:00:00.000Z",
+      "endDate": "2026-03-18T02:00:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-072"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-073",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-073",
+      "manufacturingOrderId": "MO-014",
+      "workCenterId": "WC-002",
+      "startDate": "2026-03-18T07:00:00.000Z",
+      "endDate": "2026-03-18T15:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-072-separated_1"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-074",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-074",
+      "manufacturingOrderId": "MO-014",
+      "workCenterId": "WC-003",
+      "startDate": "2026-03-19T08:00:00.000Z",
+      "endDate": "2026-03-19T16:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-073"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-075",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-075",
+      "manufacturingOrderId": "MO-014",
+      "workCenterId": "WC-005",
+      "startDate": "2026-03-20T12:00:00.000Z",
+      "endDate": "2026-03-20T17:00:00.000Z",
+      "durationMinutes": 300,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-074"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-20T12:00:00.000Z due to maintenance window."
+  },
+  {
+    "docId": "WO-076",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-076",
+      "manufacturingOrderId": "MO-015",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-12T06:00:00.000Z",
+      "endDate": "2026-03-12T14:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-11T14:00:00.000Z due to machine conflict. | Moved start to 2026-03-11T22:00:00.000Z due to machine conflict. | Moved start to 2026-03-12T06:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-077",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-077",
+      "manufacturingOrderId": "MO-015",
+      "workCenterId": "WC-002",
+      "startDate": "2026-03-13T13:00:00.000Z",
+      "endDate": "2026-03-13T15:00:00.000Z",
+      "durationMinutes": 120,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-076"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Start moved to 2026-03-12T14:00:00.000Z after parent dependencies completed. | Moved start to 2026-03-12T23:00:00.000Z due to machine conflict. | Moved start to 2026-03-13T07:00:00.000Z due to machine conflict. | Moved start to 2026-03-13T13:00:00.000Z due to machine conflict. | Split due to shift boundary gap 2026-03-13T15:00:00.000Z - 2026-03-13T15:00:00.000Z."
+  },
+  {
+    "docId": "WO-077-separated_1",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-077",
+      "manufacturingOrderId": "MO-015",
+      "workCenterId": "WC-002",
+      "startDate": "2026-03-13T15:00:00.000Z",
+      "endDate": "2026-03-13T21:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-077"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-078",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-078",
+      "manufacturingOrderId": "MO-015",
+      "workCenterId": "WC-003",
+      "startDate": "2026-03-16T14:00:00.000Z",
+      "endDate": "2026-03-16T22:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-077-separated_1"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-16T14:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-079",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-079",
+      "manufacturingOrderId": "MO-015",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-16T22:00:00.000Z",
+      "endDate": "2026-03-17T06:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-078"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Start moved to 2026-03-16T22:00:00.000Z after parent dependencies completed."
+  },
+  {
+    "docId": "WO-080",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-080",
+      "manufacturingOrderId": "MO-015",
+      "workCenterId": "WC-005",
+      "startDate": "2026-03-17T17:00:00.000Z",
+      "endDate": "2026-03-17T21:00:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-079"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-17T17:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-081",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-081",
+      "manufacturingOrderId": "MO-016",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-18T06:00:00.000Z",
+      "endDate": "2026-03-18T14:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-082",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-082",
+      "manufacturingOrderId": "MO-016",
+      "workCenterId": "WC-002",
+      "startDate": "2026-03-19T15:00:00.000Z",
+      "endDate": "2026-03-19T23:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-081"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-19T15:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-083",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-083",
+      "manufacturingOrderId": "MO-016",
+      "workCenterId": "WC-003",
+      "startDate": "2026-03-20T08:00:00.000Z",
+      "endDate": "2026-03-20T16:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-082"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-084",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-084",
+      "manufacturingOrderId": "MO-016",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-23T06:00:00.000Z",
+      "endDate": "2026-03-23T14:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-083"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Split due to shift boundary gap 2026-03-23T14:00:00.000Z - 2026-03-23T14:00:00.000Z."
+  },
+  {
+    "docId": "WO-084-separated_1",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-084",
+      "manufacturingOrderId": "MO-016",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-23T14:00:00.000Z",
+      "endDate": "2026-03-23T22:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-084"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-085",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-085",
+      "manufacturingOrderId": "MO-016",
+      "workCenterId": "WC-005",
+      "startDate": "2026-03-24T08:00:00.000Z",
+      "endDate": "2026-03-24T17:00:00.000Z",
+      "durationMinutes": 540,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-084-separated_1"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-086",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-086",
+      "manufacturingOrderId": "MO-017",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-07T00:00:00.000Z",
+      "endDate": "2026-03-07T08:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-04T14:00:00.000Z due to machine conflict. | Moved start to 2026-03-04T22:00:00.000Z due to machine conflict. | Moved start to 2026-03-05T04:00:00.000Z due to machine conflict. | Moved start to 2026-03-05T12:00:00.000Z due to machine conflict. | Moved start to 2026-03-05T14:00:00.000Z due to machine conflict. | Moved start to 2026-03-05T20:00:00.000Z due to machine conflict. | Moved start to 2026-03-06T02:00:00.000Z due to machine conflict. | Moved start to 2026-03-06T14:00:00.000Z due to machine conflict. | Moved start to 2026-03-06T16:00:00.000Z due to machine conflict. | Moved start to 2026-03-07T00:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-087",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-087",
+      "manufacturingOrderId": "MO-017",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-11T04:00:00.000Z",
+      "endDate": "2026-03-11T20:00:00.000Z",
+      "durationMinutes": 960,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-086"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Start moved to 2026-03-07T08:00:00.000Z after parent dependencies completed. | Moved start to 2026-03-09T14:00:00.000Z due to machine conflict. | Moved start to 2026-03-09T22:00:00.000Z due to machine conflict. | Moved start to 2026-03-10T06:00:00.000Z due to machine conflict. | Moved start to 2026-03-10T12:00:00.000Z due to machine conflict. | Moved start to 2026-03-10T14:00:00.000Z due to machine conflict. | Moved start to 2026-03-10T20:00:00.000Z due to machine conflict. | Moved start to 2026-03-10T22:00:00.000Z due to machine conflict. | Moved start to 2026-03-11T04:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-088",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-088",
+      "manufacturingOrderId": "MO-017",
+      "workCenterId": "WC-002",
+      "startDate": "2026-03-12T06:00:00.000Z",
+      "endDate": "2026-03-12T14:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-087"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Start moved to 2026-03-11T20:00:00.000Z after parent dependencies completed. | Moved start to 2026-03-11T21:00:00.000Z due to machine conflict. | Moved start to 2026-03-12T06:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-089",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-089",
+      "manufacturingOrderId": "MO-017",
+      "workCenterId": "WC-003",
+      "startDate": "2026-03-12T14:00:00.000Z",
+      "endDate": "2026-03-12T18:00:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-088"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Start moved to 2026-03-12T14:00:00.000Z after parent dependencies completed."
+  },
+  {
+    "docId": "WO-090",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-090",
+      "manufacturingOrderId": "MO-017",
+      "workCenterId": "WC-005",
+      "startDate": "2026-03-13T13:00:00.000Z",
+      "endDate": "2026-03-13T18:00:00.000Z",
+      "durationMinutes": 300,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-089"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Start moved to 2026-03-12T18:00:00.000Z after parent dependencies completed. | Moved start to 2026-03-13T13:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-091",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-091",
+      "manufacturingOrderId": "MO-018",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-16T14:00:00.000Z",
+      "endDate": "2026-03-16T22:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-16T14:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-092",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-092",
+      "manufacturingOrderId": "MO-018",
+      "workCenterId": "WC-002",
+      "startDate": "2026-03-17T07:00:00.000Z",
+      "endDate": "2026-03-17T15:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-091"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-093",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-093",
+      "manufacturingOrderId": "MO-018",
+      "workCenterId": "WC-005",
+      "startDate": "2026-03-20T17:00:00.000Z",
+      "endDate": "2026-03-20T21:00:00.000Z",
+      "durationMinutes": 240,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-092"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-20T12:00:00.000Z due to maintenance window. | Moved start to 2026-03-20T17:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-094",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-094",
+      "manufacturingOrderId": "MO-018",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-23T22:00:00.000Z",
+      "endDate": "2026-03-24T06:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-093"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-23T14:00:00.000Z due to machine conflict. | Moved start to 2026-03-23T22:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-095",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-095",
+      "manufacturingOrderId": "MO-018",
+      "workCenterId": "WC-003",
+      "startDate": "2026-03-24T08:00:00.000Z",
+      "endDate": "2026-03-24T16:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-094"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-096",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-096",
+      "manufacturingOrderId": "MO-019",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-19T06:00:00.000Z",
+      "endDate": "2026-03-19T14:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-097",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-097",
+      "manufacturingOrderId": "MO-019",
+      "workCenterId": "WC-002",
+      "startDate": "2026-03-20T07:00:00.000Z",
+      "endDate": "2026-03-20T15:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-096"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-098",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-098",
+      "manufacturingOrderId": "MO-019",
+      "workCenterId": "WC-003",
+      "startDate": "2026-03-23T08:00:00.000Z",
+      "endDate": "2026-03-23T16:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-097"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-099",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-099",
+      "manufacturingOrderId": "MO-019",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-24T06:00:00.000Z",
+      "endDate": "2026-03-24T14:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-098"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-100",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-100",
+      "manufacturingOrderId": "MO-019",
+      "workCenterId": "WC-005",
+      "startDate": "2026-03-25T08:00:00.000Z",
+      "endDate": "2026-03-25T14:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-099"
+      ]
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-101",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-101",
+      "manufacturingOrderId": "MO-020",
+      "workCenterId": "WC-001",
+      "startDate": "2026-03-23T06:00:00.000Z",
+      "endDate": "2026-03-23T14:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": []
+    },
+    "rescheduled": true
+  },
+  {
+    "docId": "WO-102",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-102",
+      "manufacturingOrderId": "MO-020",
+      "workCenterId": "WC-004",
+      "startDate": "2026-03-24T14:00:00.000Z",
+      "endDate": "2026-03-24T22:00:00.000Z",
+      "durationMinutes": 480,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-101"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-24T14:00:00.000Z due to machine conflict."
+  },
+  {
+    "docId": "WO-103",
+    "docType": "workOrder",
+    "data": {
+      "workOrderNumber": "WO-2026-103",
+      "manufacturingOrderId": "MO-020",
+      "workCenterId": "WC-005",
+      "startDate": "2026-03-25T14:00:00.000Z",
+      "endDate": "2026-03-25T20:00:00.000Z",
+      "durationMinutes": 360,
+      "isMaintenance": false,
+      "dependsOnWorkOrderIds": [
+        "WO-102"
+      ]
+    },
+    "rescheduled": true,
+    "reason": "Moved start to 2026-03-25T14:00:00.000Z due to machine conflict."
+  }
+]

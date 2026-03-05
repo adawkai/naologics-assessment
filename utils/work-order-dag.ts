@@ -3,18 +3,43 @@ import { WorkOrder } from "../reflow/types";
 export class WorkOrderDAG {
   private nodes: Map<string, WorkOrder> = new Map();
   private adjList: Map<string, string[]> = new Map();
+  private missingDependencies: Array<{
+    workOrderId: string;
+    missingDependencyId: string;
+  }> = [];
 
   constructor(workOrders: WorkOrder[]) {
     for (const wo of workOrders) {
       this.nodes.set(wo.docId, wo);
     }
     for (const wo of workOrders) {
-      // Only include dependencies that are actually in the input list
-      const validDeps = wo.data.dependsOnWorkOrderIds.filter((id) =>
-        this.nodes.has(id)
-      );
-      this.adjList.set(wo.docId, validDeps);
+      for (const dependencyId of wo.data.dependsOnWorkOrderIds) {
+        if (!this.nodes.has(dependencyId)) {
+          this.missingDependencies.push({
+            workOrderId: wo.docId,
+            missingDependencyId: dependencyId,
+          });
+        }
+      }
+      this.adjList.set(wo.docId, [...wo.data.dependsOnWorkOrderIds]);
     }
+
+    this.validateDependenciesExist();
+  }
+
+  validateDependenciesExist(): void {
+    if (this.missingDependencies.length === 0) {
+      return;
+    }
+
+    const message = this.missingDependencies
+      .map(
+        (item) =>
+          `${item.workOrderId} -> missing dependency ${item.missingDependencyId}`
+      )
+      .join(", ");
+
+    throw new Error(`Missing dependency references detected: ${message}`);
   }
 
   detectCycle(): string[] | null {
@@ -97,73 +122,5 @@ export class WorkOrderDAG {
     }
 
     stack.push(u);
-  }
-
-  printGraph(): void {
-    const childList = new Map<string, string[]>();
-    const rootNodes: string[] = [];
-
-    // Initialize childList and find root nodes
-    for (const [nodeId, parents] of this.adjList.entries()) {
-      if (parents.length === 0) {
-        rootNodes.push(nodeId);
-      }
-      for (const parentId of parents) {
-        const children = childList.get(parentId) || [];
-        children.push(nodeId);
-        childList.set(parentId, children);
-      }
-    }
-
-    const displayNode = (
-      id: string,
-      prefix: string = "",
-      isLast: boolean = true
-    ) => {
-      const node = this.nodes.get(id);
-      if (!node) return;
-
-      const connector = isLast ? "└── " : "├── ";
-      console.log(`${prefix}${connector}${id} (${node.data.workOrderNumber})`);
-
-      const children = childList.get(id) || [];
-      const newPrefix = prefix + (isLast ? "    " : "│   ");
-
-      children.forEach((childId, index) => {
-        displayNode(childId, newPrefix, index === children.length - 1);
-      });
-    };
-
-    if (rootNodes.length === 0 && this.nodes.size > 0) {
-      console.log("(Circular dependencies or no roots found)");
-      return;
-    }
-
-    rootNodes.forEach((rootId, index) => {
-      displayNode(rootId, "", index === rootNodes.length - 1);
-    });
-  }
-
-  toMermaid(): string {
-    let mermaid = "graph TD\n";
-    for (const [childId, parents] of this.adjList.entries()) {
-      const child = this.nodes.get(childId);
-      const childLabel = child
-        ? `${childId}["${child.data.workOrderNumber}"]`
-        : childId;
-
-      if (parents.length === 0) {
-        mermaid += `  ${childLabel}\n`;
-      } else {
-        for (const parentId of parents) {
-          const parent = this.nodes.get(parentId);
-          const parentLabel = parent
-            ? `${parentId}["${parent.data.workOrderNumber}"]`
-            : parentId;
-          mermaid += `  ${parentLabel} --> ${childLabel}\n`;
-        }
-      }
-    }
-    return mermaid;
   }
 }
