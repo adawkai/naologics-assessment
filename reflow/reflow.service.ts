@@ -63,6 +63,7 @@ export default function reflow({
   manufacturingOrders,
 }: ReflowServiceOptions): Promise<ReflowResult> {
   void manufacturingOrders;
+  // Validate input references and basic time constraints up front.
   validateConstraintInputs(workOrders, workCenters);
 
   const workCenterById = new Map(
@@ -96,6 +97,7 @@ export default function reflow({
   }
 
   const workOrderDAG = new WorkOrderDAG(workOrders);
+  // Use topological order so dependencies are handled before children.
   const stack = [...workOrderDAG.topologicalSort()];
 
   while (stack.length > 0) {
@@ -115,6 +117,7 @@ export default function reflow({
       workOrder,
       correctedById
     );
+    // Earliest legal start is max(requested start, all parent completion times).
     const requestedStart = parseIsoUtc(workOrder.data.startDate);
     let candidateStart = maxDate(requestedStart, dependencyReadyTime);
 
@@ -129,6 +132,7 @@ export default function reflow({
     }
 
     candidateStart = ensureShiftStart(candidateStart, workCenter);
+    // Initial candidate end is computed from full required duration.
     let candidateEnd = addMinutesUtc(
       candidateStart,
       workOrder.data.durationMinutes
@@ -148,6 +152,7 @@ export default function reflow({
       const machineConflict = findFirstOverlap(candidateRange, centerTimeline);
 
       if (machineConflict) {
+        // Resource conflict: split if crossing blocked interval, otherwise move forward.
         const split = splitAroundBlockedInterval(
           workOrder,
           candidateStart,
@@ -189,6 +194,7 @@ export default function reflow({
         centerMaintenance
       );
       if (maintenanceConflict) {
+        // Maintenance conflict: apply same split-or-move strategy.
         const split = splitAroundBlockedInterval(
           workOrder,
           candidateStart,
@@ -233,6 +239,7 @@ export default function reflow({
         workCenter
       );
       if (shiftGap) {
+        // Shift boundary gap: split to keep work only in valid shift windows.
         const split = splitAroundBlockedInterval(
           workOrder,
           candidateStart,
@@ -269,6 +276,7 @@ export default function reflow({
       );
       correctedWorkOrders.push(finalizedOrder);
       correctedById.set(finalizedOrder.docId, finalizedOrder);
+      // Persist finalized interval so next work orders can conflict-check against it.
       centerTimeline.push({
         start: candidateStart,
         end: candidateEnd,
@@ -459,6 +467,7 @@ function splitAroundBlockedInterval(
   blockEnd: Date,
   separatedCounters: Map<string, number>
 ): { first: WorkOrder; second: WorkOrder } | null {
+  // Split only when the interval enters a blocked range after already starting.
   const overlapsBlock = isBefore(start, blockEnd) && isAfter(end, blockStart);
   if (!overlapsBlock) {
     return null;
@@ -491,6 +500,7 @@ function splitAroundBlockedInterval(
     toIsoUtc(blockEnd),
     toIsoUtc(secondEnd)
   );
+  // Second segment is chained to first segment to preserve order.
   second.docId = nextSeparatedId(workOrder.docId, separatedCounters);
   second.data.durationMinutes = secondDuration;
   second.data.dependsOnWorkOrderIds = [first.docId];
