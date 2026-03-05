@@ -1,0 +1,196 @@
+{
+  "manufacturingOrders": [
+    {
+      "docId": "MO1-001",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO1-2026-001",
+        "itemId": "PIPE-A",
+        "quantity": 120,
+        "dueDate": "2026-04-10T23:59:00Z"
+      }
+    },
+    {
+      "docId": "MO1-002",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO1-2026-002",
+        "itemId": "PIPE-B",
+        "quantity": 90,
+        "dueDate": "2026-04-11T23:59:00Z"
+      }
+    }
+  ],
+  "workCenters": [
+    {
+      "docId": "WC1-001",
+      "docType": "workCenter",
+      "data": {
+        "name": "Extrusion Line 1",
+        "shifts": [
+          { "dayOfWeek": 1, "startHour": 8, "endHour": 16 },
+          { "dayOfWeek": 2, "startHour": 8, "endHour": 16 },
+          { "dayOfWeek": 3, "startHour": 8, "endHour": 16 },
+          { "dayOfWeek": 4, "startHour": 8, "endHour": 16 },
+          { "dayOfWeek": 5, "startHour": 8, "endHour": 16 }
+        ],
+        "maintenanceWindows": []
+      }
+    },
+    {
+      "docId": "WC1-002",
+      "docType": "workCenter",
+      "data": {
+        "name": "Extrusion Line 2",
+        "shifts": [
+          { "dayOfWeek": 1, "startHour": 6, "endHour": 13 },
+          { "dayOfWeek": 1, "startHour": 15, "endHour": 22 },
+          { "dayOfWeek": 2, "startHour": 6, "endHour": 13 },
+          { "dayOfWeek": 2, "startHour": 15, "endHour": 22 },
+          { "dayOfWeek": 3, "startHour": 6, "endHour": 13 },
+          { "dayOfWeek": 3, "startHour": 15, "endHour": 22 },
+          { "dayOfWeek": 4, "startHour": 6, "endHour": 13 },
+          { "dayOfWeek": 4, "startHour": 15, "endHour": 22 },
+          { "dayOfWeek": 5, "startHour": 6, "endHour": 13 },
+          { "dayOfWeek": 5, "startHour": 15, "endHour": 22 }
+        ],
+        "maintenanceWindows": [
+          {
+            "startDate": "2026-04-06T10:00:00Z",
+            "endDate": "2026-04-06T12:00:00Z",
+            "reason": "Die head replacement"
+          }
+        ]
+      }
+    },
+    {
+      "docId": "WC1-003",
+      "docType": "workCenter",
+      "data": {
+        "name": "Cooling & Finishing",
+        "shifts": [
+          { "dayOfWeek": 1, "startHour": 9, "endHour": 17 },
+          { "dayOfWeek": 2, "startHour": 9, "endHour": 17 },
+          { "dayOfWeek": 3, "startHour": 9, "endHour": 17 },
+          { "dayOfWeek": 4, "startHour": 9, "endHour": 17 },
+          { "dayOfWeek": 5, "startHour": 9, "endHour": 17 }
+        ],
+        "maintenanceWindows": []
+      }
+    }
+  ],
+  "workOrders": [
+    {
+      "docId": "WO1-001",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO1-2026-001",
+        "manufacturingOrderId": "MO1-001",
+        "workCenterId": "WC1-001",
+        "startDate": "2026-04-06T08:00:00Z",
+        "endDate": "2026-04-06T12:00:00Z",
+        "durationMinutes": 240,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO1-002",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO1-2026-002",
+        "manufacturingOrderId": "MO1-001",
+        "workCenterId": "WC1-002",
+        "startDate": "2026-04-06T09:00:00Z",
+        "endDate": "2026-04-06T13:00:00Z",
+        "durationMinutes": 240,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO1-001"]
+      }
+    },
+    {
+      "docId": "WO1-003",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO1-2026-003",
+        "manufacturingOrderId": "MO1-001",
+        "workCenterId": "WC1-003",
+        "startDate": "2026-04-06T13:00:00Z",
+        "endDate": "2026-04-06T16:00:00Z",
+        "durationMinutes": 180,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO1-002"]
+      }
+    },
+    {
+      "docId": "WO1-004",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO1-2026-004",
+        "manufacturingOrderId": "MO1-001",
+        "workCenterId": "WC1-001",
+        "startDate": "2026-04-06T13:00:00Z",
+        "endDate": "2026-04-06T17:00:00Z",
+        "durationMinutes": 240,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO1-003"]
+      }
+    },
+    {
+      "docId": "WO1-005",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO1-2026-005",
+        "manufacturingOrderId": "MO1-002",
+        "workCenterId": "WC1-001",
+        "startDate": "2026-04-06T09:00:00Z",
+        "endDate": "2026-04-06T13:00:00Z",
+        "durationMinutes": 240,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO1-006",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO1-2026-006",
+        "manufacturingOrderId": "MO1-002",
+        "workCenterId": "WC1-002",
+        "startDate": "2026-04-06T10:00:00Z",
+        "endDate": "2026-04-06T14:00:00Z",
+        "durationMinutes": 240,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO1-005"]
+      }
+    },
+    {
+      "docId": "WO1-007",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO1-2026-007",
+        "manufacturingOrderId": "MO1-002",
+        "workCenterId": "WC1-003",
+        "startDate": "2026-04-06T14:00:00Z",
+        "endDate": "2026-04-06T18:00:00Z",
+        "durationMinutes": 240,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO1-006"]
+      }
+    },
+    {
+      "docId": "WO1-008",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO1-2026-008",
+        "manufacturingOrderId": "MO1-002",
+        "workCenterId": "WC1-002",
+        "startDate": "2026-04-06T15:00:00Z",
+        "endDate": "2026-04-06T19:00:00Z",
+        "durationMinutes": 240,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO1-002", "WO1-007"]
+      }
+    }
+  ]
+}

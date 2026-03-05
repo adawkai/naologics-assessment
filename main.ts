@@ -1,6 +1,9 @@
 import { writeFile } from "fs/promises";
 import { ManufacturingOrder, WorkCenter, WorkOrder } from "./reflow/types";
 import orderDataRaw from "./order.json";
+import orderDataRaw1 from "./order1.json";
+import orderDataRaw2 from "./order2.json";
+import orderDataRaw3 from "./order3.json";
 import reflow from "./reflow/reflow.service";
 
 // Define expected structure
@@ -11,14 +14,17 @@ interface OrderData {
 }
 
 const orderData = orderDataRaw as unknown as OrderData;
+const orderData1 = orderDataRaw1 as unknown as OrderData;
+const orderData2 = orderDataRaw2 as unknown as OrderData;
+const orderData3 = orderDataRaw3 as unknown as OrderData;
 
-async function runReflowDemo() {
-  const workOrders = orderData.workOrders ?? [];
-  const workCenters = orderData.workCenters ?? [];
-  const manufacturingOrders = orderData.manufacturingOrders ?? [];
+async function runScenario(data: OrderData, exportFileName: string) {
+  const workOrders = data.workOrders ?? [];
+  const workCenters = data.workCenters ?? [];
+  const manufacturingOrders = data.manufacturingOrders ?? [];
 
   if (workOrders.length === 0 || workCenters.length === 0) {
-    console.log("[]");
+    await writeFile(exportFileName, "[]", "utf-8");
     return;
   }
 
@@ -49,18 +55,32 @@ async function runReflowDemo() {
   });
 
   await writeFile(
-    "order-export.json",
+    exportFileName,
     JSON.stringify(changedWorkOrdersWithMeta, null, 2),
     "utf-8"
   );
-  console.log(JSON.stringify(changedWorkOrdersWithMeta, null, 2));
 }
 
-runReflowDemo().catch(async (error: unknown) => {
-  await writeFile("order-export.json", "[]", "utf-8");
-  if (error instanceof Error) {
-    console.error(error.message);
-    return;
+async function runReflowDemo() {
+  const scenarios: Array<{ data: OrderData; output: string }> = [
+    { data: orderData, output: "order-export.json" },
+    { data: orderData1, output: "order-export1.json" },
+    { data: orderData2, output: "order-export2.json" },
+    { data: orderData3, output: "order-export3.json" },
+  ];
+
+  for (const scenario of scenarios) {
+    try {
+      await runScenario(scenario.data, scenario.output);
+    } catch {
+      await writeFile(scenario.output, "[]", "utf-8");
+    }
   }
-  console.error("unknown error");
+}
+
+runReflowDemo().catch(async () => {
+  await writeFile("order-export.json", "[]", "utf-8");
+  await writeFile("order-export1.json", "[]", "utf-8");
+  await writeFile("order-export2.json", "[]", "utf-8");
+  await writeFile("order-export3.json", "[]", "utf-8");
 });

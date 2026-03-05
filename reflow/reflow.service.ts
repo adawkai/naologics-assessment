@@ -468,9 +468,13 @@ function splitAroundBlockedInterval(
     return null;
   }
 
+  const totalDuration = workOrder.data.durationMinutes;
   const firstDuration = diffMinutesFloor(start, blockStart);
-  const secondDuration = diffMinutesFloor(blockEnd, end);
-  if (firstDuration <= 0 || secondDuration <= 0) {
+  if (firstDuration <= 0 || firstDuration >= totalDuration) {
+    return null;
+  }
+  const secondDuration = totalDuration - firstDuration;
+  if (secondDuration <= 0) {
     return null;
   }
 
@@ -481,10 +485,11 @@ function splitAroundBlockedInterval(
   );
   first.data.durationMinutes = firstDuration;
 
+  const secondEnd = addMinutesUtc(blockEnd, secondDuration);
   const second = cloneWithSchedule(
     workOrder,
     toIsoUtc(blockEnd),
-    toIsoUtc(end)
+    toIsoUtc(secondEnd)
   );
   second.docId = nextSeparatedId(workOrder.docId, separatedCounters);
   second.data.durationMinutes = secondDuration;

@@ -1,0 +1,197 @@
+{
+  "manufacturingOrders": [
+    {
+      "docId": "MO2-001",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO2-2026-001",
+        "itemId": "PIPE-C",
+        "quantity": 75,
+        "dueDate": "2026-04-15T23:59:00Z"
+      }
+    },
+    {
+      "docId": "MO2-002",
+      "docType": "ManufacturingOrder",
+      "data": {
+        "manufacturingOrderNumber": "MO2-2026-002",
+        "itemId": "PIPE-D",
+        "quantity": 60,
+        "dueDate": "2026-04-15T23:59:00Z"
+      }
+    }
+  ],
+  "workCenters": [
+    {
+      "docId": "WC2-001",
+      "docType": "workCenter",
+      "data": {
+        "name": "Extrusion Line A",
+        "shifts": [
+          { "dayOfWeek": 1, "startHour": 7, "endHour": 15 },
+          { "dayOfWeek": 2, "startHour": 7, "endHour": 15 },
+          { "dayOfWeek": 3, "startHour": 7, "endHour": 15 },
+          { "dayOfWeek": 4, "startHour": 7, "endHour": 15 },
+          { "dayOfWeek": 5, "startHour": 7, "endHour": 15 }
+        ],
+        "maintenanceWindows": []
+      }
+    },
+    {
+      "docId": "WC2-002",
+      "docType": "workCenter",
+      "data": {
+        "name": "Extrusion Line B",
+        "shifts": [
+          { "dayOfWeek": 1, "startHour": 6, "endHour": 14 },
+          { "dayOfWeek": 1, "startHour": 14, "endHour": 22 },
+          { "dayOfWeek": 2, "startHour": 6, "endHour": 14 },
+          { "dayOfWeek": 2, "startHour": 14, "endHour": 22 },
+          { "dayOfWeek": 3, "startHour": 6, "endHour": 14 },
+          { "dayOfWeek": 3, "startHour": 14, "endHour": 22 },
+          { "dayOfWeek": 4, "startHour": 6, "endHour": 14 },
+          { "dayOfWeek": 4, "startHour": 14, "endHour": 22 },
+          { "dayOfWeek": 5, "startHour": 6, "endHour": 14 },
+          { "dayOfWeek": 5, "startHour": 14, "endHour": 22 }
+        ],
+        "maintenanceWindows": [
+          {
+            "startDate": "2026-04-07T14:00:00Z",
+            "endDate": "2026-04-07T18:00:00Z",
+            "reason": "Planned gearbox inspection"
+          }
+        ]
+      }
+    },
+    {
+      "docId": "WC2-003",
+      "docType": "workCenter",
+      "data": {
+        "name": "Calibration & QA",
+        "shifts": [
+          { "dayOfWeek": 1, "startHour": 8, "endHour": 16 },
+          { "dayOfWeek": 2, "startHour": 8, "endHour": 16 },
+          { "dayOfWeek": 3, "startHour": 8, "endHour": 16 },
+          { "dayOfWeek": 4, "startHour": 8, "endHour": 16 },
+          { "dayOfWeek": 5, "startHour": 8, "endHour": 16 },
+          { "dayOfWeek": 6, "startHour": 8, "endHour": 12 }
+        ],
+        "maintenanceWindows": []
+      }
+    }
+  ],
+  "workOrders": [
+    {
+      "docId": "WO2-001",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO2-2026-001",
+        "manufacturingOrderId": "MO2-001",
+        "workCenterId": "WC2-001",
+        "startDate": "2026-04-07T07:00:00Z",
+        "endDate": "2026-04-07T11:00:00Z",
+        "durationMinutes": 240,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO2-002",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO2-2026-002",
+        "manufacturingOrderId": "MO2-001",
+        "workCenterId": "WC2-002",
+        "startDate": "2026-04-07T11:00:00Z",
+        "endDate": "2026-04-07T16:00:00Z",
+        "durationMinutes": 300,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO2-001"]
+      }
+    },
+    {
+      "docId": "WO2-003",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO2-2026-003",
+        "manufacturingOrderId": "MO2-001",
+        "workCenterId": "WC2-003",
+        "startDate": "2026-04-07T15:00:00Z",
+        "endDate": "2026-04-07T20:00:00Z",
+        "durationMinutes": 300,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO2-002"]
+      }
+    },
+    {
+      "docId": "WO2-004",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO2-2026-004",
+        "manufacturingOrderId": "MO2-001",
+        "workCenterId": "WC2-001",
+        "startDate": "2026-04-08T10:00:00Z",
+        "endDate": "2026-04-08T14:00:00Z",
+        "durationMinutes": 240,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO2-003"]
+      }
+    },
+    {
+      "docId": "WO2-005",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO2-2026-005",
+        "manufacturingOrderId": "MO2-002",
+        "workCenterId": "WC2-001",
+        "startDate": "2026-04-07T09:00:00Z",
+        "endDate": "2026-04-07T13:00:00Z",
+        "durationMinutes": 240,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": []
+      }
+    },
+    {
+      "docId": "WO2-006",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO2-2026-006",
+        "manufacturingOrderId": "MO2-002",
+        "workCenterId": "WC2-002",
+        "startDate": "2026-04-07T13:00:00Z",
+        "endDate": "2026-04-07T19:00:00Z",
+        "durationMinutes": 360,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO2-005"]
+      }
+    },
+    {
+      "docId": "WO2-007",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO2-2026-007",
+        "manufacturingOrderId": "MO2-002",
+        "workCenterId": "WC2-003",
+        "startDate": "2026-04-08T08:00:00Z",
+        "endDate": "2026-04-08T13:00:00Z",
+        "durationMinutes": 300,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO2-006"]
+      }
+    },
+    {
+      "docId": "WO2-008",
+      "docType": "workOrder",
+      "data": {
+        "workOrderNumber": "WO2-2026-008",
+        "manufacturingOrderId": "MO2-002",
+        "workCenterId": "WC2-002",
+        "startDate": "2026-04-08T15:00:00Z",
+        "endDate": "2026-04-08T20:00:00Z",
+        "durationMinutes": 300,
+        "isMaintenance": false,
+        "dependsOnWorkOrderIds": ["WO2-002", "WO2-007"]
+      }
+    }
+  ]
+}
